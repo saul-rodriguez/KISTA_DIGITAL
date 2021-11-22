@@ -1,0 +1,7 @@
+xmsim(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+xcelium> run
+Simulation complete via $finish(1) at time 564 NS + 0
+../src/counter_tb_pnr.v:19 	#500 $finish;
+xcelium> exit
+xmsim: Memory Usage - Final: 26.0M, Peak: 26.4M, Peak virtual: 199.0M
+xmsim: CPU Usage - 0.0s system + 0.0s user = 0.1s total (0.1s, 82.0% cpu)

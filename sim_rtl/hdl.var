@@ -1,0 +1,3 @@
+define WORK work
+###include $CDSHOME/tools/inca/files/hdl.var
+

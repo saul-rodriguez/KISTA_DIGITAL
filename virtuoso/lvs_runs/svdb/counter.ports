@@ -1,0 +1,18 @@
+# SVDB: Port Table (ports)
+# SVDB: Layout Primary counter
+VSS! 1 VSS! 61000 20000 metal1_conn
+out<3> 14 out<3> 604000 3200 metal3_conn
+clk 28 clk 4600 436000 metal3_conn
+VDD! 2 VDD! 68000 42800 metal1_conn
+enable 3 enable 4400 452000 metal3_conn
+out<2> 17 out<2> 619600 2400 metal3_conn
+out<2> 17 out<2> 622400 2400 metal3_conn
+out<7> 5 out<7> 539800 3800 metal3_conn
+reset 32 reset 1800 468400 metal3_conn
+reset 32 reset 4400 468000 metal3_conn
+out<0> 19 out<0> 651800 1400 metal3_conn
+out<0> 19 out<0> 652800 1400 metal3_conn
+out<1> 48 out<1> 635600 3400 metal3_conn
+out<6> 36 out<6> 556000 3600 metal3_conn
+out<5> 11 out<5> 572200 3400 metal3_conn
+out<4> 12 out<4> 588200 3400 metal3_conn

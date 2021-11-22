@@ -1,0 +1,527 @@
+[11/22 06:56:06      0s] 
+[11/22 06:56:06      0s] Cadence Innovus(TM) Implementation System.
+[11/22 06:56:06      0s] Copyright 2018 Cadence Design Systems, Inc. All rights reserved worldwide.
+[11/22 06:56:06      0s] 
+[11/22 06:56:06      0s] Version:	v18.16-s077_1, built Fri Nov 8 08:48:16 PST 2019
+[11/22 06:56:06      0s] Options:	
+[11/22 06:56:06      0s] Date:		Mon Nov 22 06:56:06 2021
+[11/22 06:56:06      0s] Host:		s2424 (x86_64 w/Linux 3.10.0-1160.42.2.el7.x86_64) (8cores*32cpus*Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz 20480KB)
+[11/22 06:56:06      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[11/22 06:56:06      0s] 
+[11/22 06:56:06      0s] License:
+[11/22 06:56:06      0s] 		invs	Innovus Implementation System	18.1	checkout succeeded
+[11/22 06:56:06      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[11/22 06:56:17     10s] @(#)CDS: Innovus v18.16-s077_1 (64bit) 11/08/2019 08:48 (Linux 2.6.18-194.el5)
+[11/22 06:56:17     10s] @(#)CDS: NanoRoute 18.16-s077_1 NR191106-2227/18_16-UB (database version 2.30, 475.7.1) {superthreading v1.47}
+[11/22 06:56:17     10s] @(#)CDS: AAE 18.16-s014 (64bit) 11/08/2019 (Linux 2.6.18-194.el5)
+[11/22 06:56:17     10s] @(#)CDS: CTE 18.16-s015_1 () Nov  7 2019 23:40:47 ( )
+[11/22 06:56:17     10s] @(#)CDS: SYNTECH 18.16-s012_1 () Oct 25 2019 10:46:42 ( )
+[11/22 06:56:17     10s] @(#)CDS: CPE v18.16-s043
+[11/22 06:56:17     10s] @(#)CDS: IQuantus/TQuantus 18.1.2-s824 (64bit) Thu Feb 28 20:18:51 PST 2019 (Linux 2.6.18-194.el5)
+[11/22 06:56:17     10s] @(#)CDS: OA 22.50-p102 Mon Sep 23 14:33:45 2019
+[11/22 06:56:17     10s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[11/22 06:56:17     10s] @(#)CDS: RCDB 11.14
+[11/22 06:56:17     10s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_16781_s2424_saul_yrdSdT.
+
+[11/22 06:56:17     10s] Change the soft stacksize limit to 0.2%RAM (128 mbytes). Set global soft_stack_size_limit to change the value.
+[11/22 06:56:17     10s] 
+[11/22 06:56:17     10s] **INFO:  MMMC transition support version v31-84 
+[11/22 06:56:17     10s] 
+[11/22 06:56:17     10s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[11/22 06:56:17     10s] <CMD> suppressMessage ENCEXT-2799
+[11/22 06:56:17     11s] <CMD> getVersion
+[11/22 06:56:18     11s] [INFO] Loading PVS 16.15 fill procedures
+[11/22 06:56:18     11s] <CMD> win
+[11/22 06:56:45     15s] <CMD> encMessage warning 0
+[11/22 06:56:45     15s] Suppress "**WARN ..." messages.
+[11/22 06:56:45     15s] <CMD> encMessage debug 0
+[11/22 06:56:45     15s] <CMD> encMessage info 0
+[11/22 06:56:46     15s] **WARN: (IMPOAX-775):	Layer 'OVERLAP' has already been defined in Innovus database, the contents will be skipped.
+[11/22 06:56:46     15s] **WARN: (IMPOAX-1645):	'minWidth' constraint is not supported on layer 'Poly'. This constraint will be ignored by tool.
+[11/22 06:56:46     15s] **WARN: (IMPOAX-1645):	'minSpacing' constraint is not supported on layer 'Poly'. This constraint will be ignored by tool.
+[11/22 06:56:46     15s] **WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_PO' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+[11/22 06:56:46     15s] **WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_DIFF' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+[11/22 06:56:46     15s] **WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_PSUB' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+[11/22 06:56:46     15s] **WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_PIMP' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+[11/22 06:56:46     15s] **WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_NIMP' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+[11/22 06:56:46     15s] **WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_NWELL' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+[11/22 06:56:46     15s] Loading view definition file from /home/saul/projects/KISTA_DIGITAL/innovus/FEOADesignlib/counter/counter_loaded_floorplan_power_pin_placed_cts_routed/viewDefinition.tcl
+[11/22 06:56:46     15s] *** End library_loading (cpu=0.00min, real=0.00min, mem=9.0M, fe_cpu=0.26min, fe_real=0.67min, fe_mem=644.2M) ***
+[11/22 06:56:46     15s] **WARN: (IMPVL-159):	Pin '\VDD! ' of cell 'NOR2X1' is defined in LEF but not in the timing library.
+[11/22 06:56:46     15s] **WARN: (IMPVL-159):	Pin '\VSS! ' of cell 'NOR2X1' is defined in LEF but not in the timing library.
+[11/22 06:56:46     15s] **WARN: (IMPVL-159):	Pin '\VDD! ' of cell 'NAND2X1' is defined in LEF but not in the timing library.
+[11/22 06:56:46     15s] **WARN: (IMPVL-159):	Pin '\VSS! ' of cell 'NAND2X1' is defined in LEF but not in the timing library.
+[11/22 06:56:46     15s] **WARN: (IMPVL-159):	Pin '\VSS! ' of cell 'INVX1' is defined in LEF but not in the timing library.
+[11/22 06:56:46     15s] **WARN: (IMPVL-159):	Pin '\VDD! ' of cell 'INVX1' is defined in LEF but not in the timing library.
+[11/22 06:56:46     15s] **WARN: (IMPVL-159):	Pin '\VSS! ' of cell 'DFFX1' is defined in LEF but not in the timing library.
+[11/22 06:56:46     15s] **WARN: (IMPVL-159):	Pin '\VDD! ' of cell 'DFFX1' is defined in LEF but not in the timing library.
+[11/22 06:56:46     15s] **WARN: (IMPVL-159):	Pin '\VSS! ' of cell 'BUFX2' is defined in LEF but not in the timing library.
+[11/22 06:56:46     15s] **WARN: (IMPVL-159):	Pin '\VDD! ' of cell 'BUFX2' is defined in LEF but not in the timing library.
+[11/22 06:56:46     15s] **WARN: (IMPVL-159):	Pin '\VSS! ' of cell 'TIELO' is defined in LEF but not in the timing library.
+[11/22 06:56:46     15s] **WARN: (IMPVL-159):	Pin '\VDD! ' of cell 'TIELO' is defined in LEF but not in the timing library.
+[11/22 06:56:46     15s] **WARN: (IMPVL-159):	Pin '\VSS! ' of cell 'TIEHI' is defined in LEF but not in the timing library.
+[11/22 06:56:46     15s] **WARN: (IMPVL-159):	Pin '\VDD! ' of cell 'TIEHI' is defined in LEF but not in the timing library.
+[11/22 06:56:46     15s] *** Netlist is unique.
+[11/22 06:56:46     15s] **WARN: (IMPFP-3961):	The techSite 'CoreSiteDouble' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/22 06:56:46     15s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/22 06:56:46     15s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/22 06:56:46     15s] Loading preference file /home/saul/projects/KISTA_DIGITAL/innovus/FEOADesignlib/counter/counter_loaded_floorplan_power_pin_placed_cts_routed/inn_data/gui.pref.tcl ...
+[11/22 06:56:47     16s] **WARN: (IMPOAX-571):	Property 'lxInternal' on Design FEOADesignlib/counter/counter_loaded_floorplan_power_pin_placed_cts_routed is a hierarchical property which is not supported in Innovus. This property is not translated and it will be lost in round trip unless updateMode is enabled.
+[11/22 06:56:47     16s] **WARN: (IMPFP-3961):	The techSite 'CoreSiteDouble' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/22 06:56:47     16s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/22 06:56:47     16s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/22 06:56:48     17s] **WARN: (IMPCCOPT-4322):	No default Or cell family identified.
+[11/22 06:56:51     17s] <CMD> fit
+[11/22 06:56:53     18s] <CMD> setDrawView place
+[11/22 06:57:19     22s] <CMD> encMessage warning 0
+[11/22 06:57:19     22s] Suppress "**WARN ..." messages.
+[11/22 06:57:19     22s] <CMD> encMessage debug 0
+[11/22 06:57:19     22s] <CMD> encMessage info 0
+[11/22 06:57:19     22s] Free PSO.
+[11/22 06:57:19     22s] **WARN: (IMPCK-8086):	The command setCTSMode is obsolete and will be removed in the next release. This command still works in this release, but by the next release you must transition to the CCOpt-based CTS flow.
+[11/22 06:57:20     22s] 
+[11/22 06:57:20     22s] 
+[11/22 06:57:20     22s] Info (SM2C): Status of key globals:
+[11/22 06:57:20     22s] 	 MMMC-by-default flow     : 1
+[11/22 06:57:20     22s] 	 Default MMMC objs envvar : 0
+[11/22 06:57:20     22s] 	 Data portability         : 0
+[11/22 06:57:20     22s] 	 MMMC PV Emulation        : 0
+[11/22 06:57:20     22s] 	 MMMC debug               : 0
+[11/22 06:57:20     22s] 	 Init_Design flow         : 1
+[11/22 06:57:20     22s] 
+[11/22 06:57:20     22s] 
+[11/22 06:57:20     22s] 	 CTE SM2C global          : false
+[11/22 06:57:20     22s] 	 Reporting view filter    : false
+[11/22 06:57:20     23s] **WARN: (IMPOAX-775):	Layer 'OVERLAP' has already been defined in Innovus database, the contents will be skipped.
+[11/22 06:57:20     23s] **WARN: (IMPOAX-1645):	'minWidth' constraint is not supported on layer 'Poly'. This constraint will be ignored by tool.
+[11/22 06:57:20     23s] **WARN: (IMPOAX-1645):	'minSpacing' constraint is not supported on layer 'Poly'. This constraint will be ignored by tool.
+[11/22 06:57:20     23s] **WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_PO' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+[11/22 06:57:20     23s] **WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_DIFF' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+[11/22 06:57:20     23s] **WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_PSUB' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+[11/22 06:57:20     23s] **WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_PIMP' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+[11/22 06:57:20     23s] **WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_NIMP' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+[11/22 06:57:20     23s] **WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_NWELL' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+[11/22 06:57:20     23s] Loading view definition file from /home/saul/projects/KISTA_DIGITAL/innovus/FEOADesignlib/counter/counter_loaded_floorplan_power_pin_placed_cts_routed_final/viewDefinition.tcl
+[11/22 06:57:20     23s] *** End library_loading (cpu=0.00min, real=0.00min, mem=6.0M, fe_cpu=0.39min, fe_real=1.23min, fe_mem=768.9M) ***
+[11/22 06:57:20     23s] **WARN: (IMPVL-159):	Pin '\VDD! ' of cell 'NOR2X1' is defined in LEF but not in the timing library.
+[11/22 06:57:20     23s] **WARN: (IMPVL-159):	Pin '\VSS! ' of cell 'NOR2X1' is defined in LEF but not in the timing library.
+[11/22 06:57:20     23s] **WARN: (IMPVL-159):	Pin '\VDD! ' of cell 'NAND2X1' is defined in LEF but not in the timing library.
+[11/22 06:57:20     23s] **WARN: (IMPVL-159):	Pin '\VSS! ' of cell 'NAND2X1' is defined in LEF but not in the timing library.
+[11/22 06:57:20     23s] **WARN: (IMPVL-159):	Pin '\VSS! ' of cell 'INVX1' is defined in LEF but not in the timing library.
+[11/22 06:57:20     23s] **WARN: (IMPVL-159):	Pin '\VDD! ' of cell 'INVX1' is defined in LEF but not in the timing library.
+[11/22 06:57:20     23s] **WARN: (IMPVL-159):	Pin '\VSS! ' of cell 'DFFX1' is defined in LEF but not in the timing library.
+[11/22 06:57:20     23s] **WARN: (IMPVL-159):	Pin '\VDD! ' of cell 'DFFX1' is defined in LEF but not in the timing library.
+[11/22 06:57:20     23s] **WARN: (IMPVL-159):	Pin '\VSS! ' of cell 'BUFX2' is defined in LEF but not in the timing library.
+[11/22 06:57:20     23s] **WARN: (IMPVL-159):	Pin '\VDD! ' of cell 'BUFX2' is defined in LEF but not in the timing library.
+[11/22 06:57:20     23s] **WARN: (IMPVL-159):	Pin '\VSS! ' of cell 'TIELO' is defined in LEF but not in the timing library.
+[11/22 06:57:20     23s] **WARN: (IMPVL-159):	Pin '\VDD! ' of cell 'TIELO' is defined in LEF but not in the timing library.
+[11/22 06:57:20     23s] **WARN: (IMPVL-159):	Pin '\VSS! ' of cell 'TIEHI' is defined in LEF but not in the timing library.
+[11/22 06:57:20     23s] **WARN: (IMPVL-159):	Pin '\VDD! ' of cell 'TIEHI' is defined in LEF but not in the timing library.
+[11/22 06:57:20     23s] *** Netlist is unique.
+[11/22 06:57:20     23s] **WARN: (IMPFP-3961):	The techSite 'CoreSiteDouble' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/22 06:57:20     23s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/22 06:57:20     23s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/22 06:57:20     23s] Loading preference file /home/saul/projects/KISTA_DIGITAL/innovus/FEOADesignlib/counter/counter_loaded_floorplan_power_pin_placed_cts_routed_final/inn_data/gui.pref.tcl ...
+[11/22 06:57:21     23s] **WARN: analysis view typ_functional_mode not found, use default_view_setup
+[11/22 06:57:21     24s] **WARN: (IMPOAX-571):	Property 'lxInternal' on Design FEOADesignlib/counter/counter_loaded_floorplan_power_pin_placed_cts_routed_final is a hierarchical property which is not supported in Innovus. This property is not translated and it will be lost in round trip unless updateMode is enabled.
+[11/22 06:57:21     24s] **WARN: (IMPFP-3961):	The techSite 'CoreSiteDouble' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/22 06:57:21     24s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/22 06:57:21     24s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/22 06:57:21     24s] **WARN: (IMPCCOPT-4322):	No default Or cell family identified.
+[11/22 06:57:24     24s] <CMD> setDrawView place
+[11/22 06:57:29     25s] <CMD> fit
+[11/22 06:57:33     26s] <CMD> getMultiCpuUsage -localCpu
+[11/22 06:57:33     26s] <CMD> get_verify_drc_mode -disable_rules -quiet
+[11/22 06:57:33     26s] <CMD> get_verify_drc_mode -quiet -area
+[11/22 06:57:33     26s] <CMD> get_verify_drc_mode -quiet -layer_range
+[11/22 06:57:33     26s] <CMD> get_verify_drc_mode -check_implant -quiet
+[11/22 06:57:33     26s] <CMD> get_verify_drc_mode -check_implant_across_rows -quiet
+[11/22 06:57:33     26s] <CMD> get_verify_drc_mode -check_ndr_spacing -quiet
+[11/22 06:57:33     26s] <CMD> get_verify_drc_mode -check_only -quiet
+[11/22 06:57:33     26s] <CMD> get_verify_drc_mode -check_same_via_cell -quiet
+[11/22 06:57:33     26s] <CMD> get_verify_drc_mode -exclude_pg_net -quiet
+[11/22 06:57:33     26s] <CMD> get_verify_drc_mode -ignore_trial_route -quiet
+[11/22 06:57:33     26s] <CMD> get_verify_drc_mode -max_wrong_way_halo -quiet
+[11/22 06:57:33     26s] <CMD> get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+[11/22 06:57:33     26s] <CMD> get_verify_drc_mode -limit -quiet
+[11/22 06:57:35     26s] <CMD> set_verify_drc_mode -disable_rules {} -check_implant true -check_implant_across_rows false -check_ndr_spacing false -check_only default -check_same_via_cell false -exclude_pg_net false -ignore_trial_route false -use_min_spacing_on_block_obs auto -report counter.drc.rpt -limit 1000
+[11/22 06:57:35     26s] <CMD> verify_drc
+[11/22 06:57:35     26s] #-report counter.drc.rpt                 # string, default="", user setting
+[11/22 06:57:35     26s]  *** Starting Verify DRC (MEM: 1001.9) ***
+[11/22 06:57:35     26s] 
+[11/22 06:57:35     26s] #WARNING (NRDB-2106) Ignoring layer Metal1 MINIMUMCUT rule with WIDTH (1.500000) <= the layer's MINWIDTH (2.000000). 
+[11/22 06:57:35     26s] #WARNING (NRDB-2106) Ignoring layer Metal2 MINIMUMCUT rule with WIDTH (1.500000) <= the layer's MINWIDTH (2.000000). 
+[11/22 06:57:35     26s] #WARNING (NRDB-2106) Ignoring layer Metal2 MINIMUMCUT rule with WIDTH (1.500000) <= the layer's MINWIDTH (2.000000). 
+[11/22 06:57:35     26s] #WARNING (NRDB-2106) Ignoring layer Metal3 MINIMUMCUT rule with WIDTH (1.500000) <= the layer's MINWIDTH (2.000000). 
+[11/22 06:57:35     26s] #WARNING (NRDB-2106) Ignoring layer Metal3 MINIMUMCUT rule with WIDTH (1.500000) <= the layer's MINWIDTH (2.000000). 
+[11/22 06:57:35     26s] #WARNING (NRDB-2106) Ignoring layer Metal4 MINIMUMCUT rule with WIDTH (1.500000) <= the layer's MINWIDTH (2.000000). 
+[11/22 06:57:35     26s] #WARNING (NRDB-733) PIN VDD in CELL_VIEW TIEHI does not have physical port.
+[11/22 06:57:35     26s] #WARNING (NRDB-733) PIN VSS in CELL_VIEW TIEHI does not have physical port.
+[11/22 06:57:35     26s] #WARNING (NRDB-733) PIN VDD in CELL_VIEW INVX1 does not have physical port.
+[11/22 06:57:35     26s] #WARNING (NRDB-733) PIN VSS in CELL_VIEW INVX1 does not have physical port.
+[11/22 06:57:35     26s] #WARNING (NRDB-733) PIN VDD in CELL_VIEW NOR2X1 does not have physical port.
+[11/22 06:57:35     26s] #WARNING (NRDB-733) PIN VSS in CELL_VIEW NOR2X1 does not have physical port.
+[11/22 06:57:35     26s] #WARNING (NRDB-733) PIN VDD in CELL_VIEW DFFX1 does not have physical port.
+[11/22 06:57:35     26s] #WARNING (NRDB-733) PIN VSS in CELL_VIEW DFFX1 does not have physical port.
+[11/22 06:57:35     26s] #WARNING (NRDB-733) PIN VDD in CELL_VIEW NAND2X1 does not have physical port.
+[11/22 06:57:35     26s] #WARNING (NRDB-733) PIN VSS in CELL_VIEW NAND2X1 does not have physical port.
+[11/22 06:57:35     26s] #WARNING (NRDB-733) PIN VDD in CELL_VIEW TIELO does not have physical port.
+[11/22 06:57:35     26s] #WARNING (NRDB-733) PIN VSS in CELL_VIEW TIELO does not have physical port.
+[11/22 06:57:35     26s] #WARNING (NRDB-733) PIN VDD in CELL_VIEW BUFX2 does not have physical port.
+[11/22 06:57:35     26s] #WARNING (NRDB-733) PIN VSS in CELL_VIEW BUFX2 does not have physical port.
+[11/22 06:57:35     26s]   VERIFY DRC ...... Starting Verification
+[11/22 06:57:35     26s]   VERIFY DRC ...... Initializing
+[11/22 06:57:35     26s]   VERIFY DRC ...... Deleting Existing Violations
+[11/22 06:57:35     26s]   VERIFY DRC ...... Creating Sub-Areas
+[11/22 06:57:35     26s]   VERIFY DRC ...... Using new threading
+[11/22 06:57:35     26s]   VERIFY DRC ...... Sub-Area: {0.000 0.000 592.000 460.000} 1 of 1
+[11/22 06:57:35     26s]   VERIFY DRC ...... Sub-Area : 1 complete 0 Viols.
+[11/22 06:57:35     26s] 
+[11/22 06:57:35     26s]   Verification Complete : 0 Viols.
+[11/22 06:57:35     26s] 
+[11/22 06:57:35     26s]  *** End Verify DRC (CPU: 0:00:00.0  ELAPSED TIME: 0.00  MEM: 2.0M) ***
+[11/22 06:57:35     26s] 
+[11/22 06:57:35     26s] <CMD> set_verify_drc_mode -area {0 0 0 0}
+[11/22 06:57:40     27s] <CMD> fit
+[11/22 06:57:50     28s] <CMD> setLayerPreference pinObj -isVisible 1
+[11/22 06:57:53     29s] <CMD> setLayerPreference pinObj -isSelectable 1
+[11/22 06:57:53     29s] <CMD> setLayerPreference pinObj -isSelectable 0
+[11/22 06:57:55     29s] <CMD> setLayerPreference pinObj -isVisible 0
+[11/22 06:57:56     29s] <CMD> setLayerPreference pinObj -isVisible 1
+[11/22 06:57:58     29s] <CMD> setLayerPreference pinObj -isVisible 0
+[11/22 06:57:58     29s] <CMD> setLayerPreference layoutObj -isVisible 1
+[11/22 06:58:05     30s] <CMD> setLayerPreference layoutObj -isVisible 0
+[11/22 06:58:06     30s] <CMD> setLayerPreference layoutObj -isVisible 1
+[11/22 06:58:07     31s] <CMD> setLayerPreference layoutObj -isVisible 0
+[11/22 06:58:08     31s] <CMD> setLayerPreference pinObj -isVisible 1
+[11/22 06:58:11     31s] <CMD> setLayerPreference cellBlkgObj -isVisible 1
+[11/22 06:58:12     31s] <CMD> setLayerPreference cellBlkgObj -isVisible 0
+[11/22 06:58:12     31s] <CMD> setLayerPreference cellBlkgObj -isVisible 1
+[11/22 06:58:35     35s] <CMD> setLayerPreference instanceCell -isVisible 0
+[11/22 06:58:36     35s] <CMD> setLayerPreference instanceCell -isVisible 1
+[11/22 06:58:43     36s] <CMD> setLayerPreference areaIo -isVisible 0
+[11/22 06:58:44     36s] <CMD> setLayerPreference areaIo -isVisible 1
+[11/22 06:58:45     36s] <CMD> setLayerPreference io -isVisible 0
+[11/22 06:58:45     36s] <CMD> setLayerPreference io -isVisible 1
+[11/22 06:58:46     36s] <CMD> setLayerPreference phyCell -isVisible 0
+[11/22 06:58:47     36s] <CMD> setLayerPreference phyCell -isVisible 1
+[11/22 06:59:32     42s] <CMD> fit
+[11/22 06:59:33     43s] <CMD> zoomBox 189.43250 459.56300 351.17950 307.08250
+[11/22 06:59:34     43s] <CMD> zoomBox 213.47200 432.90550 278.94300 362.53000
+[11/22 06:59:36     43s] <CMD> zoomBox 232.57500 421.88150 269.09150 381.82150
+[11/22 06:59:48     45s] <CMD> setLayerPreference layoutObj -isVisible 1
+[11/22 07:00:09     48s] <CMD> fit
+[11/22 07:00:43     52s] <CMD> verifyConnectivity -type all -error 1000 -warning 50
+[11/22 07:00:43     52s] VERIFY_CONNECTIVITY use new engine.
+[11/22 07:00:43     52s] 
+[11/22 07:00:43     52s] ******** Start: VERIFY CONNECTIVITY ********
+[11/22 07:00:43     52s] Start Time: Mon Nov 22 07:00:43 2021
+[11/22 07:00:43     52s] 
+[11/22 07:00:43     52s] Design Name: counter
+[11/22 07:00:43     52s] Database Units: 2000
+[11/22 07:00:43     52s] Design Boundary: (0.0000, 0.0000) (592.0000, 460.0000)
+[11/22 07:00:43     52s] Error Limit = 1000; Warning Limit = 50
+[11/22 07:00:43     52s] Check all nets
+[11/22 07:00:43     52s] 
+[11/22 07:00:43     52s] Begin Summary 
+[11/22 07:00:43     52s]   Found no problems or warnings.
+[11/22 07:00:43     52s] End Summary
+[11/22 07:00:43     52s] 
+[11/22 07:00:43     52s] End Time: Mon Nov 22 07:00:43 2021
+[11/22 07:00:43     52s] Time Elapsed: 0:00:00.0
+[11/22 07:00:43     52s] 
+[11/22 07:00:43     52s] ******** End: VERIFY CONNECTIVITY ********
+[11/22 07:00:43     52s]   Verification Complete : 0 Viols.  0 Wrngs.
+[11/22 07:00:43     52s]   (CPU Time: 0:00:00.0  MEM: 5.000M)
+[11/22 07:00:43     52s] 
+[11/22 07:01:06     55s] <CMD> saveNetlist output/counter_pnr.v
+[11/22 07:01:06     56s] ** NOTE: Created directory path 'output' for file 'output/counter_pnr.v'.
+[11/22 07:01:06     56s] Writing Netlist "output/counter_pnr.v" ...
+[11/22 07:02:32     67s] <CMD> saveNetlist output/counter_pnr_cap.v -includePhysicalCell {DECAP4 DECAP2 DECAP1}
+[11/22 07:02:32     67s] Writing Netlist "output/counter_pnr_cap.v" ...
+[11/22 07:02:58     70s] <CMD> saveDesign -cellview {COUNTER counter layout}
+[11/22 07:02:58     70s] #% Begin save design ... (date=11/22 07:02:58, mem=796.2M)
+[11/22 07:02:58     70s] ----- oaOut ---------------------------
+[11/22 07:02:58     70s] Saving OA database: Lib: COUNTER, Cell: counter, View: layout
+[11/22 07:02:58     70s] **WARN: (IMPOAX-1313):	The library 'COUNTER' has its data compression level set to '0', while the compression level for this Innovus session is 1. Any new data being saved into this library will be saved with its compression settings, irrespective of the global value.
+[11/22 07:02:58     70s] Type 'man IMPOAX-1313' for more detail.
+[11/22 07:02:58     70s] FE units: 0.0005 microns/dbu, OA units: 0.0005 microns/dbu, Conversion factor: 1
+[11/22 07:02:58     70s] Special routes: 44 strips and 32 vias are created in OA database.
+[11/22 07:02:58     70s] Signal Routes: Created 198 routes.
+[11/22 07:02:58     70s] Created 201 insts; 546 instTerms; 85 nets; 0 routes.
+[11/22 07:02:58     70s] TIMER: Write OA to disk: 0h 0m  0.00s cpu {0h 0m 0s elapsed} Memory = 0.0.
+[11/22 07:02:58     70s] TIMER: Purge OA from memory: 0h 0m  0.00s cpu {0h 0m 0s elapsed} Memory = 0.0.
+[11/22 07:02:58     70s] TIMER: oaOut total process: 0h 0m  0.04s cpu {0h 0m 0s elapsed} Memory = 0.0.
+[11/22 07:02:58     70s] % Begin Save AAE data ... (date=11/22 07:02:58, mem=797.5M)
+[11/22 07:02:58     70s] Saving AAE Data ...
+[11/22 07:02:58     70s] % End Save AAE data ... (date=11/22 07:02:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=797.5M, current mem=797.5M)
+[11/22 07:02:58     70s] % Begin Save clock tree data ... (date=11/22 07:02:58, mem=803.4M)
+[11/22 07:02:58     70s] % End Save clock tree data ... (date=11/22 07:02:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=803.4M, current mem=803.4M)
+[11/22 07:02:58     70s] Saving preference file /home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter/layout/inn_data/gui.pref.tcl ...
+[11/22 07:02:58     70s] Saving mode setting ...
+[11/22 07:02:58     70s] Saving global file ...
+[11/22 07:02:58     70s] #Saving pin access data to file /home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter/layout/inn_data/counter.apa ...
+[11/22 07:02:58     70s] Saving thumbnail file...
+[11/22 07:02:58     71s] % Begin Save ccopt configuration ... (date=11/22 07:02:58, mem=812.1M)
+[11/22 07:02:58     71s] % End Save ccopt configuration ... (date=11/22 07:02:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=813.2M, current mem=813.2M)
+[11/22 07:02:58     71s] % Begin Save power constraints data ... (date=11/22 07:02:58, mem=813.2M)
+[11/22 07:02:58     71s] % End Save power constraints data ... (date=11/22 07:02:58, total cpu=0:00:00.0, real=0:00:00.0, peak res=813.3M, current mem=813.3M)
+[11/22 07:02:59     71s] Saving property file /home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter/layout/inn_data/counter.prop
+[11/22 07:02:59     71s] *** Completed saveOALibCellAnnotation (cpu=0:00:00.0 real=0:00:01.0 mem=1014.0M) ***
+[11/22 07:02:59     71s] #% End save design ... (date=11/22 07:02:59, total cpu=0:00:00.5, real=0:00:01.0, peak res=813.5M, current mem=813.5M)
+[11/22 07:02:59     71s] 
+[11/22 07:02:59     71s] *** Summary of all messages that are not suppressed in this session:
+[11/22 07:02:59     71s] Severity  ID               Count  Summary                                  
+[11/22 07:02:59     71s] WARNING   IMPOAX-1313          1  The library '%s' has its data compressio...
+[11/22 07:02:59     71s] *** Message Summary: 1 warning(s), 0 error(s)
+[11/22 07:02:59     71s] 
+[11/22 07:03:22     74s] <CMD> extractRC
+[11/22 07:03:22     74s] Extraction called for design 'counter' of instances=201 and nets=85 using extraction engine 'postRoute' at effort level 'low' .
+[11/22 07:03:22     74s] PostRoute (effortLevel low) RC Extraction called for design counter.
+[11/22 07:03:22     74s] RC Extraction called in multi-corner(1) mode.
+[11/22 07:03:22     74s] Process corner(s) are loaded.
+[11/22 07:03:22     74s]  Corner: typ_rc
+[11/22 07:03:22     74s] extractDetailRC Option : -outfile /tmp/innovus_temp_16781_s2424_saul_yrdSdT/counter_16781_z3StXT.rcdb.d  -extended
+[11/22 07:03:22     74s] RC Mode: PostRoute -effortLevel low [Extended CapTable, RC Table Resistances]
+[11/22 07:03:22     74s]       RC Corner Indexes            0   
+[11/22 07:03:22     74s] Capacitance Scaling Factor   : 1.00000 
+[11/22 07:03:22     74s] Coupling Cap. Scaling Factor : 1.00000 
+[11/22 07:03:22     74s] Resistance Scaling Factor    : 1.00000 
+[11/22 07:03:22     74s] Clock Cap. Scaling Factor    : 1.00000 
+[11/22 07:03:22     74s] Clock Res. Scaling Factor    : 1.00000 
+[11/22 07:03:22     74s] Shrink Factor                : 1.00000
+[11/22 07:03:22     74s] Initializing multi-corner capacitance tables ... 
+[11/22 07:03:22     74s] Initializing multi-corner resistance tables ...
+[11/22 07:03:22     74s] Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1006.0M)
+[11/22 07:03:22     74s] Creating parasitic data file '/tmp/innovus_temp_16781_s2424_saul_yrdSdT/counter_16781_z3StXT.rcdb.d' for storing RC.
+[11/22 07:03:22     74s] Extracted 10.2845% (CPU Time= 0:00:00.0  MEM= 1050.1M)
+[11/22 07:03:22     74s] Extracted 20.3501% (CPU Time= 0:00:00.0  MEM= 1050.1M)
+[11/22 07:03:22     74s] Extracted 30.4158% (CPU Time= 0:00:00.0  MEM= 1050.1M)
+[11/22 07:03:22     74s] Extracted 40.2626% (CPU Time= 0:00:00.0  MEM= 1050.1M)
+[11/22 07:03:22     74s] Extracted 50.3282% (CPU Time= 0:00:00.0  MEM= 1050.1M)
+[11/22 07:03:22     74s] Extracted 60.3939% (CPU Time= 0:00:00.0  MEM= 1050.1M)
+[11/22 07:03:22     74s] Extracted 70.2407% (CPU Time= 0:00:00.0  MEM= 1050.1M)
+[11/22 07:03:22     74s] Extracted 80.3063% (CPU Time= 0:00:00.0  MEM= 1050.1M)
+[11/22 07:03:22     74s] Extracted 90.372% (CPU Time= 0:00:00.0  MEM= 1050.1M)
+[11/22 07:03:22     74s] Extracted 100% (CPU Time= 0:00:00.0  MEM= 1050.1M)
+[11/22 07:03:22     74s] Number of Extracted Resistors     : 823
+[11/22 07:03:22     74s] Number of Extracted Ground Cap.   : 902
+[11/22 07:03:22     74s] Number of Extracted Coupling Cap. : 848
+[11/22 07:03:22     74s] Opening parasitic data file '/tmp/innovus_temp_16781_s2424_saul_yrdSdT/counter_16781_z3StXT.rcdb.d' for reading.
+[11/22 07:03:22     74s] Filtering XCap in 'relativeOnly' mode using values relative_c_threshold=0.03 and total_c_threshold=5fF.
+[11/22 07:03:22     74s]  Corner: typ_rc
+[11/22 07:03:22     74s] Checking LVS Completed (CPU Time= 0:00:00.0  MEM= 1034.1M)
+[11/22 07:03:22     74s] Creating parasitic data file '/tmp/innovus_temp_16781_s2424_saul_yrdSdT/counter_16781_z3StXT.rcdb_Filter.rcdb.d' for storing RC.
+[11/22 07:03:22     74s] Closing parasitic data file '/tmp/innovus_temp_16781_s2424_saul_yrdSdT/counter_16781_z3StXT.rcdb.d'. 83 times net's RC data read were performed.
+[11/22 07:03:22     74s] Lumped Parasitic Loading Started (total cpu=0:00:00.0, real=0:00:00.0, current mem=1042.051M)
+[11/22 07:03:22     74s] Opening parasitic data file '/tmp/innovus_temp_16781_s2424_saul_yrdSdT/counter_16781_z3StXT.rcdb.d' for reading.
+[11/22 07:03:22     74s] processing rcdb (/tmp/innovus_temp_16781_s2424_saul_yrdSdT/counter_16781_z3StXT.rcdb.d) for hinst (top) of cell (counter);
+[11/22 07:03:23     74s] Lumped Parasitic Loading Completed (total cpu=0:00:00.0, real=0:00:01.0, current mem=1042.051M)
+[11/22 07:03:23     74s] PostRoute (effortLevel low) RC Extraction DONE (CPU Time: 0:00:00.1  Real Time: 0:00:01.0  MEM: 1042.051M)
+[11/22 07:04:04     79s] <CMD> rcOut
+[11/22 07:04:04     79s] 
+[11/22 07:04:04     79s] Usage: rcOut [-help] [-noRes] {{-setload <string> [-excNetFile <string> | -net <string> | -netName <string>] [-addHeaderTail ]} | {-setportload <string> [-excNetFile <string> | -net <string> | -netName <string>] [-addHeaderTail ]} | {-setres <string> [-excNetFile <string> | -net <string> | -netName <string>] [-addHeaderTail ]} | {-spef <string> [-unmapped ] [-excNetFile <string> | -net <string> | -netName <string>] [-addHeaderTail ]} | {-spf <string> [-excNetFile <string> | -net <string> | -netName <string>] [-addHeaderTail ] [-filesize <integer>]} | {-verilog <string>} } [-instance <string>] [-view <string> | -rc_corner <string>] [-cUnit {pF fF}]
+[11/22 07:04:04     79s] 
+[11/22 07:04:04     79s] **ERROR: (IMPTCM-32):	Wrong number of arguments specified for command "rcOut".
+
+[11/22 07:04:09     80s] <CMD> rcOut -help
+[11/22 07:04:09     80s] 
+[11/22 07:04:09     80s] Usage: rcOut [-help] [-noRes] {{-setload <string> [-excNetFile <string> | -net <string> | -netName <string>] [-addHeaderTail ]} | {-setportload <string> [-excNetFile <string> | -net <string> | -netName <string>] [-addHeaderTail ]} | {-setres <string> [-excNetFile <string> | -net <string> | -netName <string>] [-addHeaderTail ]} | {-spef <string> [-unmapped ] [-excNetFile <string> | -net <string> | -netName <string>] [-addHeaderTail ]} | {-spf <string> [-excNetFile <string> | -net <string> | -netName <string>] [-addHeaderTail ] [-filesize <integer>]} | {-verilog <string>} } [-instance <string>] [-view <string> | -rc_corner <string>] [-cUnit {pF fF}]
+[11/22 07:04:09     80s] 
+[11/22 07:04:09     80s] -help                    # Prints out the command usage
+[11/22 07:04:09     80s] -addHeaderTail           # Adds the header and footer information in the output SPF or
+[11/22 07:04:09     80s]                          # SPEF file. This parameter is only available with the -net
+[11/22 07:04:09     80s]                          # parameter. (bool, optional)
+[11/22 07:04:09     80s] -cUnit {pF fF}           # Specifies the unit of capacitance as fF or pF in the output
+[11/22 07:04:09     80s]                          # SPEF file. (enum, optional)
+[11/22 07:04:09     80s] -excNetFile <string>     # Specifies the name of the file that contains nets to be
+[11/22 07:04:09     80s]                          # excluded from the output file (string, optional)
+[11/22 07:04:09     80s] -filesize <integer>      # Specifies the size in MBytes of the output SPF file. When the
+[11/22 07:04:09     80s]                          # software reaches this size limit, it writes the extracted data
+[11/22 07:04:09     80s]                          # to multiple files. The output file includes all the SPF files
+[11/22 07:04:09     80s]                          # using the .include command. (int, optional, min=10, max=100000)
+[11/22 07:04:09     80s] -instance <string>       # Specifies the hierarchical instance to be extracted for its
+[11/22 07:04:09     80s]                          # port loading of external loads for setportload format. The
+[11/22 07:04:09     80s]                          # external loads are wire loading, internal pin loading, and
+[11/22 07:04:09     80s]                          # external pin loading. (string, optional)
+[11/22 07:04:09     80s] -net <string>            # Specifies the name of the input file that contains the net
+[11/22 07:04:09     80s]                          # names to be extracted. The default is to Extracts all net
+[11/22 07:04:09     80s]                          # names. (string, optional)
+[11/22 07:04:09     80s] -netName <string>        # Specify the name of the net to be written in spef file. The
+[11/22 07:04:09     80s]                          # default is to write all nets. (string, optional)
+[11/22 07:04:09     80s] -noRes                   # Generates a SPEF file without the resistance information. The
+[11/22 07:04:09     80s]                          # SPEF file generated by this parameter can only be used to
+[11/22 07:04:09     80s]                          # improve the performance of third-party simulator tools in
+[11/22 07:04:09     80s]                          # early stages of the design. (bool, optional)
+[11/22 07:04:09     80s] -rc_corner <string>      # Specifies the RC corner that is used to generate the output
+[11/22 07:04:09     80s]                          # SPEF file in the multi-corner flow. (string, optional)
+[11/22 07:04:09     80s] -setload <string>        # Specifies the name of the file in which the value of lump sum
+[11/22 07:04:09     80s]                          # capacitance on nets is stored. (string, optional)
+[11/22 07:04:09     80s] -setportload <string>    # Specifies the name of the output file. All output formats are
+[11/22 07:04:09     80s]                          # written to this file. This option is only available in the
+[11/22 07:04:09     80s]                          # preRoute extraction mode. (string, optional)
+[11/22 07:04:09     80s] -setres <string>         # Specifies the name of the file in which the resistance value
+[11/22 07:04:09     80s]                          # on nets is stored. (string, optional)
+[11/22 07:04:09     80s] -spef <string>           # Specifies the name of the SPEF output file. (string, optional)
+[11/22 07:04:09     80s] -spf <string>            # Specifies the name of the SPF output file. (string, optional)
+[11/22 07:04:09     80s] -unmapped                # Specifies the exclusion of name mapping in the output SPEF
+[11/22 07:04:09     80s]                          # file. This parameter is only available in the preRoute mode.
+[11/22 07:04:09     80s]                          # (bool, optional)
+[11/22 07:04:09     80s] -verilog <string>        # Specifies the name of the output Verilog file
+[11/22 07:04:09     80s]                          # (string, optional)
+[11/22 07:04:09     80s] -view <string>           # Specifies that the RC corner associated with the specified
+[11/22 07:04:09     80s]                          # view is used to generate the output SPEF file in the
+[11/22 07:04:09     80s]                          # multi-corner flow. (string, optional)
+[11/22 07:04:09     80s] 
+[11/22 07:04:09     80s] 
+[11/22 07:08:45    117s] <CMD> rcOut -spf output/TOP_TM_select.spf -rc_corner typ_rc
+[11/22 07:08:45    117s] Opening parasitic data file '/tmp/innovus_temp_16781_s2424_saul_yrdSdT/counter_16781_z3StXT.rcdb.d' for reading.
+[11/22 07:08:45    117s] RC Out has the following PVT Info:
+[11/22 07:08:45    117s]    RC:typ_rc, Operating temperature 25 C
+[11/22 07:08:45    117s] Printing *|NET...
+[11/22 07:08:45    117s] RC Out from RCDB Completed (CPU Time= 0:00:00.0  MEM= 1042.1M)
+[11/22 07:08:45    117s] Closing parasitic data file '/tmp/innovus_temp_16781_s2424_saul_yrdSdT/counter_16781_z3StXT.rcdb.d'. 83 times net's RC data read were performed.
+[11/22 07:09:14    121s] <CMD> all_hold_analysis_views 
+[11/22 07:09:24    122s] <CMD> all_setup_analysis_views
+[11/22 07:10:48    133s] <CMD> write_sdf -view typ_functional_more "output/TOP_TM_typ_RC_1_8V_25C.sdf"
+[11/22 07:10:48    133s] **ERROR: (TCLCMD-996):	`typ_functional_more` is invalid view name.
+
+[11/22 07:10:56    134s] <CMD> write_sdf -view typ_functional_mode "output/TOP_TM_typ_RC_1_8V_25C.sdf"
+[11/22 07:10:56    134s] **WARN: (SDF-808):	The software is currently operating in a high performance mode which optimizes the handling of multiple timing arcs between input and output pin pairs. With the current settings, the SDF file generated will contain the same delay information for all of these arcs. To have the SDF recalculated with explicit pin pair data, you should use the option '-recompute_delay_calc'. This setting is recommended for generating SDF for functional  simulation applications.
+[11/22 07:10:56    134s] Starting SI iteration 1 using Infinite Timing Windows
+[11/22 07:10:56    134s] #################################################################################
+[11/22 07:10:56    134s] # Design Stage: PostRoute
+[11/22 07:10:56    134s] # Design Name: counter
+[11/22 07:10:56    134s] # Design Mode: 250nm
+[11/22 07:10:56    134s] # Analysis Mode: MMMC OCV 
+[11/22 07:10:56    134s] # Parasitics Mode: SPEF/RCDB
+[11/22 07:10:56    134s] # Signoff Settings: SI On 
+[11/22 07:10:56    134s] #################################################################################
+[11/22 07:10:56    134s] AAE_INFO: 1 threads acquired from CTE.
+[11/22 07:10:56    134s] Setting infinite Tws ...
+[11/22 07:10:56    134s] First Iteration Infinite Tw... 
+[11/22 07:10:56    134s] Topological Sorting (REAL = 0:00:00.0, MEM = 1042.1M, InitMEM = 1042.1M)
+[11/22 07:10:56    134s] Start delay calculation (fullDC) (1 T). (MEM=1042.05)
+[11/22 07:10:56    134s] Initializing multi-corner capacitance tables ... 
+[11/22 07:10:56    134s] Initializing multi-corner resistance tables ...
+[11/22 07:10:56    134s] Start AAE Lib Loading. (MEM=1050.26)
+[11/22 07:10:56    134s] End AAE Lib Loading. (MEM=1059.8 CPU=0:00:00.0 Real=0:00:00.0)
+[11/22 07:10:56    134s] End AAE Lib Interpolated Model. (MEM=1059.8 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[11/22 07:10:56    134s] Opening parasitic data file '/tmp/innovus_temp_16781_s2424_saul_yrdSdT/counter_16781_z3StXT.rcdb.d' for reading.
+[11/22 07:10:56    134s] RC Database In Completed (CPU Time= 0:00:00.0  Real Time=0:00:00.0  MEM= 1069.3M)
+[11/22 07:10:56    135s] Total number of fetched objects 83
+[11/22 07:10:56    135s] AAE_INFO-618: Total number of nets in the design is 85,  100.0 percent of the nets selected for SI analysis
+[11/22 07:10:56    135s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[11/22 07:10:56    135s] End delay calculation. (MEM=1119.02 CPU=0:00:00.1 REAL=0:00:00.0)
+[11/22 07:10:56    135s] End delay calculation (fullDC). (MEM=1107.48 CPU=0:00:00.3 REAL=0:00:00.0)
+[11/22 07:10:56    135s] *** CDM Built up (cpu=0:00:00.3  real=0:00:00.0  mem= 1107.5M) ***
+[11/22 07:10:56    135s] Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1107.5M)
+[11/22 07:10:56    135s] Add other clocks and setupCteToAAEClockMapping during iter 1
+[11/22 07:10:56    135s] Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1107.5M)
+[11/22 07:10:56    135s] Starting SI iteration 2
+[11/22 07:10:56    135s] Start delay calculation (fullDC) (1 T). (MEM=1064.32)
+[11/22 07:10:56    135s] End AAE Lib Interpolated Model. (MEM=1064.32 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[11/22 07:10:56    135s] Glitch Analysis: View typ_functional_mode -- Total Number of Nets Skipped = 0. 
+[11/22 07:10:56    135s] Glitch Analysis: View typ_functional_mode -- Total Number of Nets Analyzed = 83. 
+[11/22 07:10:56    135s] Total number of fetched objects 83
+[11/22 07:10:56    135s] AAE_INFO-618: Total number of nets in the design is 85,  2.4 percent of the nets selected for SI analysis
+[11/22 07:10:56    135s] End delay calculation. (MEM=1070.47 CPU=0:00:00.0 REAL=0:00:00.0)
+[11/22 07:10:56    135s] End delay calculation (fullDC). (MEM=1070.47 CPU=0:00:00.1 REAL=0:00:00.0)
+[11/22 07:10:56    135s] *** CDM Built up (cpu=0:00:00.1  real=0:00:00.0  mem= 1070.5M) ***
+[11/22 07:12:20    146s] <CMD> write_sdf -view typ_functional_mode "output/TOP_TM_typ_RC_1_8V_25C.sdf" -recompute_delay_calc 
+[11/22 07:12:20    146s] Starting SI iteration 1 using Infinite Timing Windows
+[11/22 07:12:20    146s] #################################################################################
+[11/22 07:12:20    146s] # Design Stage: PostRoute
+[11/22 07:12:20    146s] # Design Name: counter
+[11/22 07:12:20    146s] # Design Mode: 250nm
+[11/22 07:12:20    146s] # Analysis Mode: MMMC OCV 
+[11/22 07:12:20    146s] # Parasitics Mode: SPEF/RCDB
+[11/22 07:12:20    146s] # Signoff Settings: SI On 
+[11/22 07:12:20    146s] #################################################################################
+[11/22 07:12:20    146s] AAE_INFO: 1 threads acquired from CTE.
+[11/22 07:12:20    146s] Setting infinite Tws ...
+[11/22 07:12:20    146s] First Iteration Infinite Tw... 
+[11/22 07:12:20    146s] Topological Sorting (REAL = 0:00:00.0, MEM = 1062.3M, InitMEM = 1062.3M)
+[11/22 07:12:20    146s] Start delay calculation (fullDC) (1 T). (MEM=1062.26)
+[11/22 07:12:20    146s] End AAE Lib Interpolated Model. (MEM=1070.47 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[11/22 07:12:20    146s] Total number of fetched objects 83
+[11/22 07:12:20    146s] AAE_INFO-618: Total number of nets in the design is 85,  100.0 percent of the nets selected for SI analysis
+[11/22 07:12:20    146s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[11/22 07:12:20    146s] End delay calculation. (MEM=1121.55 CPU=0:00:00.1 REAL=0:00:00.0)
+[11/22 07:12:20    146s] End delay calculation (fullDC). (MEM=1121.55 CPU=0:00:00.3 REAL=0:00:00.0)
+[11/22 07:12:20    146s] *** CDM Built up (cpu=0:00:00.3  real=0:00:00.0  mem= 1121.6M) ***
+[11/22 07:12:21    147s] Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1121.6M)
+[11/22 07:12:21    147s] Add other clocks and setupCteToAAEClockMapping during iter 1
+[11/22 07:12:21    147s] Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1121.6M)
+[11/22 07:12:21    147s] Starting SI iteration 2
+[11/22 07:12:21    147s] Start delay calculation (fullDC) (1 T). (MEM=1065.34)
+[11/22 07:12:21    147s] End AAE Lib Interpolated Model. (MEM=1065.34 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[11/22 07:12:21    147s] Glitch Analysis: View typ_functional_mode -- Total Number of Nets Skipped = 0. 
+[11/22 07:12:21    147s] Glitch Analysis: View typ_functional_mode -- Total Number of Nets Analyzed = 83. 
+[11/22 07:12:21    147s] Total number of fetched objects 83
+[11/22 07:12:21    147s] AAE_INFO-618: Total number of nets in the design is 85,  2.4 percent of the nets selected for SI analysis
+[11/22 07:12:21    147s] End delay calculation. (MEM=1071.49 CPU=0:00:00.0 REAL=0:00:00.0)
+[11/22 07:12:21    147s] End delay calculation (fullDC). (MEM=1071.49 CPU=0:00:00.1 REAL=0:00:00.0)
+[11/22 07:12:21    147s] *** CDM Built up (cpu=0:00:00.1  real=0:00:00.0  mem= 1071.5M) ***
+[11/22 07:14:52    166s] <CMD> write_sdf -view typ_functional_mode "output/TOP_TM_typ_RC_1_8V_25C.sdf" -recompute_delay_calc 
+[11/22 07:14:52    166s] Starting SI iteration 1 using Infinite Timing Windows
+[11/22 07:14:53    167s] #################################################################################
+[11/22 07:14:53    167s] # Design Stage: PostRoute
+[11/22 07:14:53    167s] # Design Name: counter
+[11/22 07:14:53    167s] # Design Mode: 250nm
+[11/22 07:14:53    167s] # Analysis Mode: MMMC OCV 
+[11/22 07:14:53    167s] # Parasitics Mode: SPEF/RCDB
+[11/22 07:14:53    167s] # Signoff Settings: SI On 
+[11/22 07:14:53    167s] #################################################################################
+[11/22 07:14:53    167s] AAE_INFO: 1 threads acquired from CTE.
+[11/22 07:14:53    167s] Setting infinite Tws ...
+[11/22 07:14:53    167s] First Iteration Infinite Tw... 
+[11/22 07:14:53    167s] Topological Sorting (REAL = 0:00:00.0, MEM = 1063.3M, InitMEM = 1063.3M)
+[11/22 07:14:53    167s] Start delay calculation (fullDC) (1 T). (MEM=1063.28)
+[11/22 07:14:53    167s] End AAE Lib Interpolated Model. (MEM=1071.49 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[11/22 07:14:53    167s] Total number of fetched objects 83
+[11/22 07:14:53    167s] AAE_INFO-618: Total number of nets in the design is 85,  100.0 percent of the nets selected for SI analysis
+[11/22 07:14:53    167s] End Timing Check Calculation. (CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[11/22 07:14:53    167s] End delay calculation. (MEM=1103.49 CPU=0:00:00.1 REAL=0:00:00.0)
+[11/22 07:14:53    167s] End delay calculation (fullDC). (MEM=1103.49 CPU=0:00:00.3 REAL=0:00:00.0)
+[11/22 07:14:53    167s] *** CDM Built up (cpu=0:00:00.3  real=0:00:00.0  mem= 1103.5M) ***
+[11/22 07:14:53    167s] Loading CTE timing window with TwFlowType 0...(CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1103.5M)
+[11/22 07:14:53    167s] Add other clocks and setupCteToAAEClockMapping during iter 1
+[11/22 07:14:53    167s] Loading CTE timing window is completed (CPU = 0:00:00.0, REAL = 0:00:00.0, MEM = 1103.5M)
+[11/22 07:14:53    167s] Starting SI iteration 2
+[11/22 07:14:53    167s] Start delay calculation (fullDC) (1 T). (MEM=1065.84)
+[11/22 07:14:53    167s] End AAE Lib Interpolated Model. (MEM=1065.84 CPU Time=0:00:00.0, Real Time=0:00:00.0)
+[11/22 07:14:53    167s] Glitch Analysis: View typ_functional_mode -- Total Number of Nets Skipped = 0. 
+[11/22 07:14:53    167s] Glitch Analysis: View typ_functional_mode -- Total Number of Nets Analyzed = 83. 
+[11/22 07:14:53    167s] Total number of fetched objects 83
+[11/22 07:14:53    167s] AAE_INFO-618: Total number of nets in the design is 85,  2.4 percent of the nets selected for SI analysis
+[11/22 07:14:53    167s] End delay calculation. (MEM=1072 CPU=0:00:00.0 REAL=0:00:00.0)
+[11/22 07:14:53    167s] End delay calculation (fullDC). (MEM=1072 CPU=0:00:00.1 REAL=0:00:00.0)
+[11/22 07:14:53    167s] *** CDM Built up (cpu=0:00:00.1  real=0:00:00.0  mem= 1072.0M) ***
+[11/22 10:34:38   1651s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Mon Nov 22 10:34:38 2021
+  Total CPU time:     0:27:33
+  Total real time:    3:38:34
+  Peak memory (main): 835.16MB
+
+[11/22 10:34:38   1651s] 
+[11/22 10:34:38   1651s] *** Memory Usage v#1 (Current mem = 1063.785M, initial mem = 253.809M) ***
+[11/22 10:34:38   1651s] 
+[11/22 10:34:38   1651s] *** Summary of all messages that are not suppressed in this session:
+[11/22 10:34:38   1651s] Severity  ID               Count  Summary                                  
+[11/22 10:34:38   1651s] WARNING   IMPFP-3961          12  The techSite '%s' has no related standar...
+[11/22 10:34:38   1651s] WARNING   IMPCK-8086           1  The command %s is obsolete and will be r...
+[11/22 10:34:38   1651s] WARNING   IMPVL-159           28  Pin '%s' of cell '%s' is defined in LEF ...
+[11/22 10:34:38   1651s] WARNING   IMPCCOPT-4322        2  No default Or cell family identified.    
+[11/22 10:34:38   1651s] WARNING   IMPOAX-571           2  Property '%s' on %s %s is a hierarchical...
+[11/22 10:34:38   1651s] WARNING   IMPOAX-1637         12  Enclosure and width are supported on rou...
+[11/22 10:34:38   1651s] WARNING   IMPOAX-1645          4  '%s' constraint is not supported on laye...
+[11/22 10:34:38   1651s] WARNING   IMPOAX-775           2  Layer '%s' has already been defined in %...
+[11/22 10:34:38   1651s] WARNING   IMPOAX-1313          1  The library '%s' has its data compressio...
+[11/22 10:34:38   1651s] ERROR     IMPTCM-32            1  Wrong number of arguments specified for ...
+[11/22 10:34:38   1651s] WARNING   SDF-808              1  The software is currently operating in a...
+[11/22 10:34:38   1651s] ERROR     TCLCMD-996           1  `%s` is invalid view name.               
+[11/22 10:34:38   1651s] *** Message Summary: 65 warning(s), 2 error(s)
+[11/22 10:34:38   1651s] 
+[11/22 10:34:38   1651s] --- Ending "Innovus" (totcpu=0:27:32, real=3:38:32, mem=1063.8M) ---

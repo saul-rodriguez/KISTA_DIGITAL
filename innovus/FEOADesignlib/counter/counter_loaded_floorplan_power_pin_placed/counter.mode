@@ -1,0 +1,71 @@
+catch { setDesignMode -process 250 }
+catch { setAnalysisMode -analysisType single }
+catch { setAnalysisMode -checkType setup }
+catch { setAnalysisMode -clkSrcPath true }
+catch { setAnalysisMode -clockPropagation forcedIdeal }
+catch { setAnalysisMode -usefulSkew true }
+catch { setOptMode -activeHoldViews { typ_functional_mode } }
+catch { setOptMode -activeSetupViews { typ_functional_mode } }
+catch { setOptMode -autoSetupViews { typ_functional_mode} }
+catch { setOptMode -autoTDGRSetupViews { typ_functional_mode} }
+catch { setOptMode -drcMargin 0 }
+catch { setOptMode -fixDrc true }
+catch { setOptMode -optimizeFF true }
+catch { setOptMode -setupTargetSlack 0 }
+setExtractRCMode  -engine preRoute -total_c_th 5 -relative_c_th 0.03 -coupling_c_th 3
+catch {setNanoRouteMode -quiet -droutePostRouteSpreadWire "1"}
+catch {setNanoRouteMode -quiet -drouteUseMinSpacingForBlockage auto}
+catch {setNanoRouteMode -quiet -extractThirdPartyCompatible false}
+catch {setNanoRouteMode -quiet -grouteExpTdStdDelay 472.300000}
+catch {setNanoRouteMode -quiet -routeStrictlyHonorNonDefaultRule "false"}
+catch {setNanoRouteMode -quiet -timingEngine ""}
+
+catch { setIlmMode -keepHighFanoutPorts true -keepLoopBack false -keepFlatten true }
+catch { setUsefulSkewMode -maxAllowedDelay 1 }
+catch { setUsefulSkewMode -maxSkew false }
+catch { setUsefulSkewMode -noBoundary false }
+catch { setUsefulSkewMode -useCells {BUFX2 INVX1} }
+catch { setViaGenMode -parameterized_via_only true }
+catch { setViaGenMode -symmetrical_via_only true }
+catch { setSrouteMode -viaConnectToShape noshape }
+catch { set_verify_drc_mode -area {0 0 0 0} }
+catch { set_verify_drc_mode -check_implant true }
+catch { set_verify_drc_mode -check_implant_across_rows false }
+catch { set_verify_drc_mode -check_ndr_spacing false }
+catch { set_verify_drc_mode -check_only default }
+catch { set_verify_drc_mode -check_same_via_cell false }
+catch { set_verify_drc_mode -disable_rules "" }
+catch { set_verify_drc_mode -exclude_pg_net false }
+catch { set_verify_drc_mode -ignore_trial_route false }
+catch { set_verify_drc_mode -limit 1000 }
+catch { set_verify_drc_mode -report counter.drc.rpt }
+catch { set_verify_drc_mode -use_min_spacing_on_block_obs auto }
+catch { setDelayCalMode -enable_high_fanout true }
+catch { setDelayCalMode -eng_copyNetPropToNewNet true }
+catch { setDelayCalMode -engine aae }
+catch { setDelayCalMode -ignoreNetLoad false }
+catch { setPinAssignMode -pinEditInBatch false }
+catch { setAddRingMode -avoid_short false }
+catch { setAddRingMode -extend_over_row false }
+catch { setAddRingMode -ignore_rows false }
+catch { setAddRingMode -orthogonal_only true }
+catch { setAddRingMode -ring_target default }
+catch { setAddRingMode -skip_crossing_trunks none }
+catch { setAddRingMode -skip_via_on_pin standardcell }
+catch { setAddRingMode -skip_via_on_wire_shape noshape }
+catch { setAddRingMode -stacked_via_bottom_layer Metal1 }
+catch { setAddRingMode -stacked_via_top_layer Metal4 }
+catch { setAddRingMode -via_using_exact_crossover_size true }
+catch { setTieHiLoMode -cell {{TIEHI TIELO}} }
+catch { setTieHiLoMode -createHierPort false }
+catch { setTieHiLoMode -honorDontTouch false }
+catch { setTieHiLoMode -maxFanout 10 }
+catch { setGenerateViaMode -auto true }
+catch { setSIMode -separate_delta_delay_on_data true }
+catch { setRouteMode -earlyGlobalHonorMsvRouteConstraint false }
+catch { setRouteMode -earlyGlobalMaxRouteLayer 3 }
+catch { setRouteMode -earlyGlobalMinRouteLayer 1 }
+catch { setRouteMode -earlyGlobalRoutePartitionPinGuide true }
+catch { setEndCapMode -boundary_tap false }
+catch { setFPlanMode -maxIoHeight false }
+catch { setFPlanMode -powerRailLayer {} }

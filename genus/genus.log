@@ -1,0 +1,263 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2018 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 18.15-s055_1, built Tue Sep 24 05:53:45 PDT 2019
+Options: -files synt.tcl 
+Date:    Thu Nov 18 14:27:24 2021
+Host:    s2424 (x86_64 w/Linux 3.10.0-1160.42.2.el7.x86_64) (8cores*32cpus*2physical cpus*Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz 20480KB) (65709328KB)
+OS:      CentOS Linux release 7.9.2009 (Core)
+
+Checking out license: Genus_Synthesis
+
+Loading tool scripts...
+
+Finished loading tool scripts (7 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source synt.tcl
+#@ Begin verbose source synt.tcl
+@file(synt.tcl) 10: set_db information_level 9
+  Setting attribute of root '/': 'information_level' = 9
+@file(synt.tcl) 12: set_db lib_search_path "../liberty"
+  Setting attribute of root '/': 'lib_search_path' = ../liberty
+@file(synt.tcl) 15: set_db library KISTA_SOI_STDLIB_ECSM_TT.lib
+
+Threads Configured:3
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_capacitance' on 'output/inout' pin 'Y' of cell 'TIELO' is not defined in the library. (File /home/saul/projects/KISTA_DIGITAL/genus/../liberty/KISTA_SOI_STDLIB_ECSM_TT.lib)
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_capacitance' on 'output/inout' pin 'Y' of cell 'TIEHI' is not defined in the library. (File /home/saul/projects/KISTA_DIGITAL/genus/../liberty/KISTA_SOI_STDLIB_ECSM_TT.lib)
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'TIELO' is not defined in the library. (File /home/saul/projects/KISTA_DIGITAL/genus/../liberty/KISTA_SOI_STDLIB_ECSM_TT.lib)
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'TIEHI' is not defined in the library. (File /home/saul/projects/KISTA_DIGITAL/genus/../liberty/KISTA_SOI_STDLIB_ECSM_TT.lib)
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'BUFX2' is not defined in the library. (File /home/saul/projects/KISTA_DIGITAL/genus/../liberty/KISTA_SOI_STDLIB_ECSM_TT.lib)
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Q' of cell 'DFFX1' is not defined in the library. (File /home/saul/projects/KISTA_DIGITAL/genus/../liberty/KISTA_SOI_STDLIB_ECSM_TT.lib)
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'QN' of cell 'DFFX1' is not defined in the library. (File /home/saul/projects/KISTA_DIGITAL/genus/../liberty/KISTA_SOI_STDLIB_ECSM_TT.lib)
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'INVX1' is not defined in the library. (File /home/saul/projects/KISTA_DIGITAL/genus/../liberty/KISTA_SOI_STDLIB_ECSM_TT.lib)
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'NAND2X1' is not defined in the library. (File /home/saul/projects/KISTA_DIGITAL/genus/../liberty/KISTA_SOI_STDLIB_ECSM_TT.lib)
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Y' of cell 'NOR2X1' is not defined in the library. (File /home/saul/projects/KISTA_DIGITAL/genus/../liberty/KISTA_SOI_STDLIB_ECSM_TT.lib)
+
+  Message Summary for Library KISTA_SOI_STDLIB_ECSM_TT.lib:
+  *********************************************************
+  Could not find an attribute in the library. [LBR-436]: 10
+  *********************************************************
+ 
+            Reading file '/home/saul/projects/KISTA_DIGITAL/genus/../liberty/KISTA_SOI_STDLIB_ECSM_TT.lib'
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.800000, 25.000000) in library 'KISTA_SOI_STDLIB_ECSM_TT.lib'.
+        : The nominal operating condition represents either the nominal PVT values if specified in the library source, or the default PVT values (1.0, 1.0, 1.0).
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'KISTA_SOI_STDLIB_ECSM_TT/BUFX2'.
+        : Specify a valid area value for the libcell.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'KISTA_SOI_STDLIB_ECSM_TT/DFFX1'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'KISTA_SOI_STDLIB_ECSM_TT/INVX1'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'KISTA_SOI_STDLIB_ECSM_TT/NAND2X1'.
+Warning : Libcell has no area attribute.  Defaulting to 0 area. [LBR-43]
+        : Assigning 0 area to library cell 'KISTA_SOI_STDLIB_ECSM_TT/NOR2X1'.
+  Setting attribute of root '/': 'library' = KISTA_SOI_STDLIB_ECSM_TT.lib
+@file(synt.tcl) 18: set_db operating_conditions PVT_1P8V_25C
+  Setting attribute of root '/': 'operating_conditions' = operating_condition:default_emulate_libset_max/KISTA_SOI_STDLIB_ECSM_TT/PVT_1P8V_25C
+@file(synt.tcl) 23: read_hdl ../src/counter.v 
+            Reading Verilog file '../src/counter.v'
+@file(synt.tcl) 25: set_db hdl_error_on_blackbox 1
+  Setting attribute of root '/': 'hdl_error_on_blackbox' = true
+@file(synt.tcl) 26: set_db hdl_error_on_latch 1
+  Setting attribute of root '/': 'hdl_error_on_latch' = true
+@file(synt.tcl) 28: elaborate counter
+  Library has 4 usable logic and 1 usable sequential lib-cells.
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'counter' from file '../src/counter.v'.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'out' [8] doesn't match the width of right hand side [32] in assignment in file '../src/counter.v' on line 23.
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=8 B=1 Z=8) at line 23 in the file '../src/counter.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=8 B=1 Z=8) at line 23 in the file '../src/counter.v' will be considered in the following order: {'hdl_implementation:GB/add_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/add_unsigned/medium' (priority 1), 'hdl_implementation:GB/add_unsigned/slow' (priority 1)}
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'counter'.
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+        Applying wireload models.
+        Computing net loads.
+UM:  flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:             6              8                                      elaborate
+@file(synt.tcl) 30: check_design -unresolved 
+  Checking the design.
+
+ 	 Check Design Report
+	 -------------------- 
+
+  Unresolved References & Empty Modules
+  ------------------------------------- 
+No unresolved references in design 'counter'
+
+No empty modules in design 'counter'
+
+  Done Checking the design.
+@file(synt.tcl) 31: check_design -all
+  Checking the design.
+
+ 	 Check Design Report
+	 -------------------- 
+
+ Long Module Names
+----------------------
+No subdesign's name is greater than 1.5k in length.
+
+  Unresolved References & Empty Modules
+  ------------------------------------- 
+No unresolved references in design 'counter'
+
+No empty modules in design 'counter'
+
+ Unloaded Pin(s), Port(s)
+ -------------------------
+No unloaded sequential element in 'counter'
+
+No unloaded port in 'counter'
+
+ Unloaded Combinational Pin(s)
+ -------------------------------
+No unloaded combinational element in 'counter'
+
+ Assigns
+ ------- 
+Total number of assign statements in design 'counter' : 0
+
+ Undriven Port(s)/Pin(s)
+ ------------------------
+No undriven combinational pin in 'counter'
+
+No undriven sequential pin in 'counter'
+
+No undriven hierarchical pin in 'counter'
+
+No undriven port in 'counter'
+
+ Multidriven Port(s)/Pin(s)
+--------------------------
+
+No multidriven combinational pin in 'counter'
+
+No multidriven sequential pin in 'counter'
+
+No multidriven hierarchical pin in 'counter'
+
+No multidriven ports in 'counter'
+
+No multidriven unloaded nets in 'counter'
+
+  Constant Pin(s)
+  ----------------
+No constant combinational pin(s) in design 'counter'
+
+No constant sequential pin(s) in design 'counter'
+
+design 'counter' has the following constant input hierarchical pin(s)
+hpin:counter/add_23_20/B 	 (fanout : 2)
+hpin:counter/mux_out_20_9/in_1[0] 	 (fanout : 1)
+hpin:counter/mux_out_20_9/in_1[1] 	 (fanout : 1)
+hpin:counter/mux_out_20_9/in_1[2] 	 (fanout : 1)
+hpin:counter/mux_out_20_9/in_1[3] 	 (fanout : 1)
+hpin:counter/mux_out_20_9/in_1[4] 	 (fanout : 1)
+hpin:counter/mux_out_20_9/in_1[5] 	 (fanout : 1)
+hpin:counter/mux_out_20_9/in_1[6] 	 (fanout : 1)
+hpin:counter/mux_out_20_9/in_1[7] 	 (fanout : 1)
+Total number of constant hierarchical pins in design 'counter' : 9
+
+No constant connected ports in design 'counter'
+
+  Preserved instances(s)
+  ----------------
+No preserved combinational instance(s) in design 'counter'
+No preserved sequential instance(s) in design 'counter'
+No preserved hierarchical instance(s) in design 'counter'
+
+  Physical only instances(s)
+  ----------------
+No physical only instance(s) in design 'counter'
+
+  Logical only instance(s) and linked libcells
+    -----------------------------------------
+No logical only instance(s) in design 'counter'
+
+Libcells with no corresponding LEF
+----------------------------------
+No libcell(s) found.
+
+LEF cells with no corresponding libcell
+---------------------------------------
+
+No physical (LEF) cells found.
+
+ Summary
+ ------- 
+
+                Name                 Total 
+-------------------------------------------
+Unresolved References                    0 
+Empty Modules                            0 
+Unloaded Port(s)                         0 
+Unloaded Sequential Pin(s)               0 
+Unloaded Combinational Pin(s)            0 
+Assigns                                  0 
+Undriven Port(s)                         0 
+Undriven Leaf Pin(s)                     0 
+Undriven hierarchical pin(s)             0 
+Multidriven Port(s)                      0 
+Multidriven Leaf Pin(s)                  0 
+Multidriven hierarchical Pin(s)          0 
+Multidriven unloaded net(s)              0 
+Constant Port(s)                         0 
+Constant Leaf Pin(s)                     0 
+Constant hierarchical Pin(s)             9 
+Preserved leaf instance(s)               0 
+Preserved hierarchical instance(s)       0 
+Libcells with no LEF cell                0 
+Physical (LEF) cells with no libcell     0 
+Subdesigns with long module name         0 
+Physical only instance(s)                0 
+Logical only instance(s)                 0 
+
+  Done Checking the design.
+@file(synt.tcl) 38: create_clock -name "CLK" -add -period 100.0 [get_ports clk]
+@file(synt.tcl) 39: set_clock_latency 0.2 [get_clocks CLK]
+@file(synt.tcl) 40: set_clock_uncertainty -setup 0.3 [get_clocks CLK]
+@file(synt.tcl) 41: set_clock_uncertainty -hold 0.2 [get_clocks CLK]
+@file(synt.tcl) 52: set_output_delay 0.2 -max -network_latency_included \
+-clock CLK [all_outputs]
+@file(synt.tcl) 54: set_output_delay 0.1 -min -network_latency_included \
+-clock CLK [all_outputs]
+@file(synt.tcl) 58: set_load  0.10 -max [all_outputs]
+@file(synt.tcl) 59: set_load  0.01 -min [all_outputs]
+@file(synt.tcl) 62: set_input_delay 0.2 -max -network_latency_included \
+-clock CLK [all_inputs]
+@file(synt.tcl) 64: set_input_delay 0.1 -min -network_latency_included \
+-clock CLK [all_inputs]
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:counter/create_clock_delay_domain_1_CLK_R_0'.
+Info    : Removed object. [TUI-58]
+        : Removed external_delay 'external_delay:counter/create_clock_delay_domain_1_CLK_F_0'.
+@file(synt.tcl) 68: set_driving_cell -min -lib_cell BUFX2 -library kallhall -pin "Y" [all_inputs]
+Error   : Invalid SDC command option combination. [SDC-204] [set_driving_cell]
+        : The 'set_driving_cell' command cannot find any library named 'kallhall'.
+        : This option is not valid for the indicated SDC command. Check the SDC command and contact Cadence customer support if you believe this option combination should be supported.
+#@ End verbose source synt.tcl
+
+Encountered problems processing file: synt.tcl
+WARNING: This version of the tool is 786 days old.
+Normal exit.

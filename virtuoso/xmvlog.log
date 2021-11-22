@@ -1,0 +1,4 @@
+xmvlog(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+reg [7:0] out;
+            |
+xmvlog: *W,ILLPDX (/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter/functional/verilog.v,9|12): Multiple declarations for a port not allowed in module with ANSI list of port declarations (port 'out') [12.3.4(IEEE-2001)].

@@ -1,0 +1,121 @@
+[11/22 13:46:52      0s] 
+[11/22 13:46:52      0s] Cadence Innovus(TM) Implementation System.
+[11/22 13:46:52      0s] Copyright 2018 Cadence Design Systems, Inc. All rights reserved worldwide.
+[11/22 13:46:52      0s] 
+[11/22 13:46:52      0s] Version:	v18.16-s077_1, built Fri Nov 8 08:48:16 PST 2019
+[11/22 13:46:52      0s] Options:	
+[11/22 13:46:52      0s] Date:		Mon Nov 22 13:46:52 2021
+[11/22 13:46:52      0s] Host:		s2424 (x86_64 w/Linux 3.10.0-1160.42.2.el7.x86_64) (8cores*32cpus*Intel(R) Xeon(R) CPU E5-2630 v3 @ 2.40GHz 20480KB)
+[11/22 13:46:52      0s] OS:		CentOS Linux release 7.9.2009 (Core)
+[11/22 13:46:52      0s] 
+[11/22 13:46:52      0s] License:
+[11/22 13:46:52      0s] 		invs	Innovus Implementation System	18.1	checkout succeeded
+[11/22 13:46:52      0s] 		8 CPU jobs allowed with the current license(s). Use setMultiCpuUsage to set your required CPU count.
+[11/22 13:47:04     11s] @(#)CDS: Innovus v18.16-s077_1 (64bit) 11/08/2019 08:48 (Linux 2.6.18-194.el5)
+[11/22 13:47:04     11s] @(#)CDS: NanoRoute 18.16-s077_1 NR191106-2227/18_16-UB (database version 2.30, 475.7.1) {superthreading v1.47}
+[11/22 13:47:04     11s] @(#)CDS: AAE 18.16-s014 (64bit) 11/08/2019 (Linux 2.6.18-194.el5)
+[11/22 13:47:04     11s] @(#)CDS: CTE 18.16-s015_1 () Nov  7 2019 23:40:47 ( )
+[11/22 13:47:04     11s] @(#)CDS: SYNTECH 18.16-s012_1 () Oct 25 2019 10:46:42 ( )
+[11/22 13:47:04     11s] @(#)CDS: CPE v18.16-s043
+[11/22 13:47:04     11s] @(#)CDS: IQuantus/TQuantus 18.1.2-s824 (64bit) Thu Feb 28 20:18:51 PST 2019 (Linux 2.6.18-194.el5)
+[11/22 13:47:04     11s] @(#)CDS: OA 22.50-p102 Mon Sep 23 14:33:45 2019
+[11/22 13:47:04     11s] @(#)CDS: SGN 10.10-p124 (19-Aug-2014) (64 bit executable)
+[11/22 13:47:04     11s] @(#)CDS: RCDB 11.14
+[11/22 13:47:04     11s] Create and set the environment variable TMPDIR to /tmp/innovus_temp_1232_s2424_saul_7sDw0c.
+
+[11/22 13:47:04     11s] Change the soft stacksize limit to 0.2%RAM (128 mbytes). Set global soft_stack_size_limit to change the value.
+[11/22 13:47:04     12s] 
+[11/22 13:47:04     12s] **INFO:  MMMC transition support version v31-84 
+[11/22 13:47:04     12s] 
+[11/22 13:47:04     12s] <CMD> set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+[11/22 13:47:04     12s] <CMD> suppressMessage ENCEXT-2799
+[11/22 13:47:04     12s] <CMD> getVersion
+[11/22 13:47:05     12s] [INFO] Loading PVS 16.15 fill procedures
+[11/22 13:47:05     12s] <CMD> win
+[11/22 13:47:21     14s] <CMD> encMessage warning 0
+[11/22 13:47:21     14s] Suppress "**WARN ..." messages.
+[11/22 13:47:21     14s] <CMD> encMessage debug 0
+[11/22 13:47:21     14s] <CMD> encMessage info 0
+[11/22 13:47:21     15s] **WARN: (IMPOAX-775):	Layer 'OVERLAP' has already been defined in Innovus database, the contents will be skipped.
+[11/22 13:47:21     15s] **WARN: (IMPOAX-1645):	'minWidth' constraint is not supported on layer 'Poly'. This constraint will be ignored by tool.
+[11/22 13:47:21     15s] **WARN: (IMPOAX-1645):	'minSpacing' constraint is not supported on layer 'Poly'. This constraint will be ignored by tool.
+[11/22 13:47:21     15s] **WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_PO' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+[11/22 13:47:21     15s] **WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_DIFF' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+[11/22 13:47:21     15s] **WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_PSUB' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+[11/22 13:47:21     15s] **WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_PIMP' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+[11/22 13:47:21     15s] **WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_NIMP' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+[11/22 13:47:21     15s] **WARN: (IMPOAX-1637):	Enclosure and width are supported on routing layers only. StdViaDef (VIARULE GENERATE) 'M1_NWELL' contains a non-routing layer hence, enclosure and width values will be ignored by the tool.
+[11/22 13:47:21     15s] Loading view definition file from /home/saul/projects/KISTA_DIGITAL/innovus/FEOADesignlib/counter/counter_loaded_floorplan_power_pin_placed_cts_routed_final/viewDefinition.tcl
+[11/22 13:47:21     15s] *** End library_loading (cpu=0.00min, real=0.00min, mem=7.2M, fe_cpu=0.26min, fe_real=0.48min, fe_mem=642.9M) ***
+[11/22 13:47:21     15s] **WARN: (IMPVL-159):	Pin '\VDD! ' of cell 'NOR2X1' is defined in LEF but not in the timing library.
+[11/22 13:47:21     15s] **WARN: (IMPVL-159):	Pin '\VSS! ' of cell 'NOR2X1' is defined in LEF but not in the timing library.
+[11/22 13:47:21     15s] **WARN: (IMPVL-159):	Pin '\VDD! ' of cell 'NAND2X1' is defined in LEF but not in the timing library.
+[11/22 13:47:21     15s] **WARN: (IMPVL-159):	Pin '\VSS! ' of cell 'NAND2X1' is defined in LEF but not in the timing library.
+[11/22 13:47:21     15s] **WARN: (IMPVL-159):	Pin '\VSS! ' of cell 'INVX1' is defined in LEF but not in the timing library.
+[11/22 13:47:21     15s] **WARN: (IMPVL-159):	Pin '\VDD! ' of cell 'INVX1' is defined in LEF but not in the timing library.
+[11/22 13:47:21     15s] **WARN: (IMPVL-159):	Pin '\VSS! ' of cell 'DFFX1' is defined in LEF but not in the timing library.
+[11/22 13:47:21     15s] **WARN: (IMPVL-159):	Pin '\VDD! ' of cell 'DFFX1' is defined in LEF but not in the timing library.
+[11/22 13:47:21     15s] **WARN: (IMPVL-159):	Pin '\VSS! ' of cell 'BUFX2' is defined in LEF but not in the timing library.
+[11/22 13:47:21     15s] **WARN: (IMPVL-159):	Pin '\VDD! ' of cell 'BUFX2' is defined in LEF but not in the timing library.
+[11/22 13:47:21     15s] **WARN: (IMPVL-159):	Pin '\VSS! ' of cell 'TIELO' is defined in LEF but not in the timing library.
+[11/22 13:47:21     15s] **WARN: (IMPVL-159):	Pin '\VDD! ' of cell 'TIELO' is defined in LEF but not in the timing library.
+[11/22 13:47:21     15s] **WARN: (IMPVL-159):	Pin '\VSS! ' of cell 'TIEHI' is defined in LEF but not in the timing library.
+[11/22 13:47:21     15s] **WARN: (IMPVL-159):	Pin '\VDD! ' of cell 'TIEHI' is defined in LEF but not in the timing library.
+[11/22 13:47:22     15s] *** Netlist is unique.
+[11/22 13:47:22     15s] **WARN: (IMPFP-3961):	The techSite 'CoreSiteDouble' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/22 13:47:22     15s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/22 13:47:22     15s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/22 13:47:22     15s] Loading preference file /home/saul/projects/KISTA_DIGITAL/innovus/FEOADesignlib/counter/counter_loaded_floorplan_power_pin_placed_cts_routed_final/inn_data/gui.pref.tcl ...
+[11/22 13:47:22     16s] **WARN: (IMPOAX-571):	Property 'lxInternal' on Design FEOADesignlib/counter/counter_loaded_floorplan_power_pin_placed_cts_routed_final is a hierarchical property which is not supported in Innovus. This property is not translated and it will be lost in round trip unless updateMode is enabled.
+[11/22 13:47:22     16s] **WARN: (IMPFP-3961):	The techSite 'CoreSiteDouble' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/22 13:47:22     16s] **WARN: (IMPFP-3961):	The techSite 'CornerSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/22 13:47:22     16s] **WARN: (IMPFP-3961):	The techSite 'IOSite' has no related standard cells in LEF/OA library. Cannot make calculations for this site type unless standard cell models of this type exist in the LEF/OA library. If the SITE is not used by the library you can ignore this warning or remove the SITE definition from the LEF/OA to avoid this message.
+[11/22 13:47:23     17s] **WARN: (IMPCCOPT-4322):	No default Or cell family identified.
+[11/22 13:47:26     17s] <CMD> setDrawView place
+[11/22 13:47:47     20s] <CMD> setLayerPreference layoutObj -isVisible 1
+[11/22 13:47:51     21s] <CMD> zoomBox 236.60850 -37.47250 362.97350 40.03150
+[11/22 13:47:54     21s] <CMD> fit
+[11/22 13:47:55     22s] <CMD> zoomBox -22.91500 254.12200 19.15850 198.58550
+[11/22 13:47:59     22s] <CMD> fit
+[11/22 13:48:19     25s] <CMD> fit
+[11/22 13:48:38     28s] <CMD> uiSetTool ruler
+[11/22 13:49:23     35s] <CMD> setLayerPreference node_overlay -isVisible 1
+[11/22 13:49:23     35s] 
+[11/22 13:49:23     35s] 
+[11/22 13:49:23     35s] 
+[11/22 13:49:25     35s] <CMD> fit
+[11/22 13:49:35     37s] <CMD> setLayerPreference node_inst -isVisible 0
+[11/22 13:49:36     37s] <CMD> setLayerPreference node_inst -isVisible 1
+[11/22 13:49:47     39s] <CMD> setLayerPreference groupmain_Congestion -isVisible 0
+[11/22 13:49:47     39s] <CMD> setLayerPreference congestH -isVisible 0
+[11/22 13:49:47     39s] <CMD> setLayerPreference congestV -isVisible 0
+[11/22 13:49:47     39s] <CMD> setLayerPreference gcellOvflow -isVisible 0
+[11/22 13:49:47     39s] <CMD> setLayerPreference congest -isVisible 0
+[11/22 13:49:47     39s] <CMD> setLayerPreference congestObj -isVisible 0
+[11/22 13:49:48     39s] <CMD> setLayerPreference groupmain_Congestion -isVisible 1
+[11/22 13:49:48     39s] <CMD> setLayerPreference congestH -isVisible 1
+[11/22 13:49:48     39s] <CMD> setLayerPreference congestV -isVisible 1
+[11/22 13:49:48     39s] <CMD> setLayerPreference congest -isVisible 1
+[11/22 13:49:48     39s] <CMD> setLayerPreference congestObj -isVisible 1
+[11/22 13:50:00     41s] 
+--------------------------------------------------------------------------------
+Exiting Innovus on Mon Nov 22 13:50:00 2021
+  Total CPU time:     0:00:42
+  Total real time:    0:03:09
+  Peak memory (main): 794.49MB
+
+[11/22 13:50:00     41s] 
+[11/22 13:50:00     41s] *** Memory Usage v#1 (Current mem = 1065.719M, initial mem = 253.809M) ***
+[11/22 13:50:00     41s] 
+[11/22 13:50:00     41s] *** Summary of all messages that are not suppressed in this session:
+[11/22 13:50:00     41s] Severity  ID               Count  Summary                                  
+[11/22 13:50:00     41s] WARNING   IMPFP-3961           6  The techSite '%s' has no related standar...
+[11/22 13:50:00     41s] WARNING   IMPVL-159           14  Pin '%s' of cell '%s' is defined in LEF ...
+[11/22 13:50:00     41s] WARNING   IMPCCOPT-4322        1  No default Or cell family identified.    
+[11/22 13:50:00     41s] WARNING   IMPOAX-571           1  Property '%s' on %s %s is a hierarchical...
+[11/22 13:50:00     41s] WARNING   IMPOAX-1637          6  Enclosure and width are supported on rou...
+[11/22 13:50:00     41s] WARNING   IMPOAX-1645          2  '%s' constraint is not supported on laye...
+[11/22 13:50:00     41s] WARNING   IMPOAX-775           1  Layer '%s' has already been defined in %...
+[11/22 13:50:00     41s] *** Message Summary: 31 warning(s), 0 error(s)
+[11/22 13:50:00     41s] 
+[11/22 13:50:00     41s] --- Ending "Innovus" (totcpu=0:00:41.4, real=0:03:08, mem=1065.7M) ---

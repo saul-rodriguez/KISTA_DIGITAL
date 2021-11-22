@@ -1,0 +1,99 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Mon Nov 22 06:56:17 2021                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v18.16-s077_1 (64bit) 11/08/2019 08:48 (Linux 2.6.18-194.el5)
+#@(#)CDS: NanoRoute 18.16-s077_1 NR191106-2227/18_16-UB (database version 2.30, 475.7.1) {superthreading v1.47}
+#@(#)CDS: AAE 18.16-s014 (64bit) 11/08/2019 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 18.16-s015_1 () Nov  7 2019 23:40:47 ( )
+#@(#)CDS: SYNTECH 18.16-s012_1 () Oct 25 2019 10:46:42 ( )
+#@(#)CDS: CPE v18.16-s043
+#@(#)CDS: IQuantus/TQuantus 18.1.2-s824 (64bit) Thu Feb 28 20:18:51 PST 2019 (Linux 2.6.18-194.el5)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+win
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+restoreDesign -cellview {FEOADesignlib counter counter_loaded_floorplan_power_pin_placed_cts_routed}
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+fit
+setDrawView place
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+restoreDesign -cellview {FEOADesignlib counter counter_loaded_floorplan_power_pin_placed_cts_routed_final}
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+setDrawView place
+fit
+getMultiCpuUsage -localCpu
+get_verify_drc_mode -disable_rules -quiet
+get_verify_drc_mode -quiet -area
+get_verify_drc_mode -quiet -layer_range
+get_verify_drc_mode -check_implant -quiet
+get_verify_drc_mode -check_implant_across_rows -quiet
+get_verify_drc_mode -check_ndr_spacing -quiet
+get_verify_drc_mode -check_only -quiet
+get_verify_drc_mode -check_same_via_cell -quiet
+get_verify_drc_mode -exclude_pg_net -quiet
+get_verify_drc_mode -ignore_trial_route -quiet
+get_verify_drc_mode -max_wrong_way_halo -quiet
+get_verify_drc_mode -use_min_spacing_on_block_obs -quiet
+get_verify_drc_mode -limit -quiet
+set_verify_drc_mode -disable_rules {} -check_implant true -check_implant_across_rows false -check_ndr_spacing false -check_only default -check_same_via_cell false -exclude_pg_net false -ignore_trial_route false -use_min_spacing_on_block_obs auto -report counter.drc.rpt -limit 1000
+verify_drc
+set_verify_drc_mode -area {0 0 0 0}
+fit
+setLayerPreference pinObj -isVisible 1
+setLayerPreference pinObj -isSelectable 1
+setLayerPreference pinObj -isSelectable 0
+setLayerPreference pinObj -isVisible 0
+setLayerPreference pinObj -isVisible 1
+setLayerPreference pinObj -isVisible 0
+setLayerPreference layoutObj -isVisible 1
+setLayerPreference layoutObj -isVisible 0
+setLayerPreference layoutObj -isVisible 1
+setLayerPreference layoutObj -isVisible 0
+setLayerPreference pinObj -isVisible 1
+setLayerPreference cellBlkgObj -isVisible 1
+setLayerPreference cellBlkgObj -isVisible 0
+setLayerPreference cellBlkgObj -isVisible 1
+setLayerPreference instanceCell -isVisible 0
+setLayerPreference instanceCell -isVisible 1
+setLayerPreference areaIo -isVisible 0
+setLayerPreference areaIo -isVisible 1
+setLayerPreference io -isVisible 0
+setLayerPreference io -isVisible 1
+setLayerPreference phyCell -isVisible 0
+setLayerPreference phyCell -isVisible 1
+fit
+zoomBox 189.43250 459.56300 351.17950 307.08250
+zoomBox 213.47200 432.90550 278.94300 362.53000
+zoomBox 232.57500 421.88150 269.09150 381.82150
+setLayerPreference layoutObj -isVisible 1
+fit
+verifyConnectivity -type all -error 1000 -warning 50
+saveNetlist output/counter_pnr.v
+saveNetlist output/counter_pnr_cap.v -includePhysicalCell {DECAP4 DECAP2 DECAP1}
+saveDesign -cellview {COUNTER counter layout}
+extractRC
+rcOut
+rcOut -help
+rcOut -spf output/TOP_TM_select.spf -rc_corner typ_rc
+all_hold_analysis_views 
+all_setup_analysis_views
+write_sdf -view typ_functional_more "output/TOP_TM_typ_RC_1_8V_25C.sdf"
+write_sdf -view typ_functional_mode "output/TOP_TM_typ_RC_1_8V_25C.sdf"
+write_sdf -view typ_functional_mode "output/TOP_TM_typ_RC_1_8V_25C.sdf" -recompute_delay_calc 
+write_sdf -view typ_functional_mode "output/TOP_TM_typ_RC_1_8V_25C.sdf" -recompute_delay_calc 

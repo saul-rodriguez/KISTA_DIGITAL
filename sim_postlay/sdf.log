@@ -1,0 +1,77 @@
+======================================================================
+
+Annotating SDF timing data:
+  Compiled SDF file:     TOP_TM_typ_RC_1_8V_25C.sdf.X
+  Log file:              sdf.log
+  Backannotation scope:  counter_tb_pnr.counter1
+  Configuration file:    
+  MTM control:           MAXIMUM
+  Scale factors:         
+  Scale type:            
+
+Time units: 1ns
+
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CK) QN) of instance counter_tb_pnr.counter1.\out_reg[7]  of module DFFX1 <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 229>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CK) Q) of instance counter_tb_pnr.counter1.\out_reg[7]  of module DFFX1 <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 230>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[7]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 234>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[7]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 235>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[7]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 236>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[7]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 237>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[7]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 238>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[7]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 239>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CK) QN) of instance counter_tb_pnr.counter1.\out_reg[6]  of module DFFX1 <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 259>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CK) Q) of instance counter_tb_pnr.counter1.\out_reg[6]  of module DFFX1 <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 260>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[6]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 264>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[6]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 265>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[6]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 266>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[6]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 267>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[6]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 268>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[6]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 269>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CK) QN) of instance counter_tb_pnr.counter1.\out_reg[5]  of module DFFX1 <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 300>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CK) Q) of instance counter_tb_pnr.counter1.\out_reg[5]  of module DFFX1 <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 301>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[5]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 305>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[5]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 306>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[5]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 307>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[5]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 308>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[5]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 309>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[5]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 310>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CK) QN) of instance counter_tb_pnr.counter1.\out_reg[4]  of module DFFX1 <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 352>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CK) Q) of instance counter_tb_pnr.counter1.\out_reg[4]  of module DFFX1 <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 353>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[4]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 357>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[4]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 358>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[4]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 359>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[4]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 360>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[4]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 361>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[4]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 362>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CK) QN) of instance counter_tb_pnr.counter1.\out_reg[3]  of module DFFX1 <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 415>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CK) Q) of instance counter_tb_pnr.counter1.\out_reg[3]  of module DFFX1 <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 416>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[3]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 420>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[3]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 421>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[3]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 422>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[3]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 423>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[3]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 424>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[3]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 425>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CK) QN) of instance counter_tb_pnr.counter1.\out_reg[2]  of module DFFX1 <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 489>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CK) Q) of instance counter_tb_pnr.counter1.\out_reg[2]  of module DFFX1 <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 490>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[2]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 494>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[2]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 495>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[2]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 496>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[2]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 497>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[2]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 498>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[2]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 499>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CK) QN) of instance counter_tb_pnr.counter1.\out_reg[1]  of module DFFX1 <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 584>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CK) Q) of instance counter_tb_pnr.counter1.\out_reg[1]  of module DFFX1 <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 585>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[1]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 589>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[1]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 590>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[1]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 591>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[1]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 592>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[1]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 593>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[1]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 594>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CK) QN) of instance counter_tb_pnr.counter1.\out_reg[0]  of module DFFX1 <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 734>.
+xmelab: *W,SDFNEP: Unable to annotate to non-existent path (IOPATH (posedge CK) Q) of instance counter_tb_pnr.counter1.\out_reg[0]  of module DFFX1 <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 735>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[0]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 739>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[0]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 740>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[0]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 741>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[0]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 742>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[0]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 743>.
+xmelab: *W,SDFNSB: Attempt to annotate specify block data of instance counter_tb_pnr.counter1.\out_reg[0]  of module DFFX1, which has no specify block <../innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf, line 744>.

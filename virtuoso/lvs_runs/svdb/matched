@@ -1,0 +1,34 @@
+##############################################################################################################
+#####  
+#####                                         PVS LVS COMPARISON
+#####  
+#####  Version                       :   16.15-s010
+#####  NVN Run Start                 :   Mon Nov 22 07:52:13 2021
+#####  ERC Summary File              :   counter.sum
+#####  Extraction Report File        :   counter.rep
+#####  Comparison Report File        :   counter.rep.cls
+#####  Top Cell                      :   counter  <vs>  counter
+#####  
+#####  Run Result                    :   MATCH
+#####  
+#####  Run Summary                   :   [INFO]  ERC Results: Empty
+#####                                :   [INFO]  Extraction Clean
+#####  
+#####  Layout Design                 :   COUNTER counter layout
+#####  Schematic File                :   /home/saul/projects/KISTA_DIGITAL/virtuoso/lvs_runs/counter.cdl (cdl)
+#####  Rules File                    :   .technology.rul
+#####  Pin Swap File                 :   counter.rep.cps
+#####  
+#####  Extraction CPU Time           :   0h 0m 0s - (0s)
+#####  Extraction Exec Time          :   0h 0m 0s - (0s)
+#####  Extraction Peak Memory Usage  :   33.00MB
+#####  NVN CPU Time                  :   0h 0m 0s - (0s)                 
+#####  NVN Exec Time                 :   0h 0m 2s - (2s)                 
+#####  NVN Peak Memory Usage         :   232.40MB
+#####  LVS Total CPU Time            :   0h 0m 0s - (0s)                 
+#####  LVS Total Exec Time           :   0h 0m 2s - (2s)                 
+#####  LVS Total Peak Memory Usage   :   232.40MB
+#####  
+##############################################################################################################
+
+

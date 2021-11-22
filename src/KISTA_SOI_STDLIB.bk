@@ -1,0 +1,151 @@
+Functional verilog std cells
+============================
+Created måndag 01 november 2021
+
+//Verilog HDL for "KISTA_SOI_STDLIB", "TIEHI" "functional"
+ 
+`timescale 1ns/10ps
+
+`celldefine
+module TIEHI (Y);
+	output Y;
+
+
+	// Function
+	buf (Y, 1'b1);
+
+	// Timing
+	specify
+	endspecify
+endmodule
+`endcelldefine
+
+
+
+//Verilog HDL for "KISTA_SOI_STDLIB", "TIELO" "functional"
+ 
+//`timescale 1ns/10ps
+`celldefine
+module TIELO (Y);
+	output Y;
+	//input A;
+
+	// Function
+	buf (Y, 1'b0);
+
+	// Timing
+	specify
+	endspecify
+endmodule
+`endcelldefine
+
+
+
+//Verilog HDL for "KISTA_SOI_STDLIB", "BUFX2" "functional"
+
+// type:  
+//`timescale 1ns/10ps
+`celldefine
+module BUFX2 (Y, A);
+	output Y;
+	input A;
+
+	// Function
+	buf (Y, A);
+
+	// Timing
+	specify
+		(A => Y) = 0;
+	endspecify
+endmodule
+`endcelldefine
+
+
+
+//Verilog HDL for "KISTA_SOI_STDLIB", "DFFX1" "functional"
+
+//`timescale 1ns/10ps
+
+module DFFX1 ( Q, QN, CK, D );
+
+   input     CK, D;
+   output reg Q, QN;
+
+   always @(posedge CK) begin
+		Q <= D;
+		QN <=~D;
+   end
+
+endmodule
+
+
+//Verilog HDL for "KISTA_SOI_STDLIB", "INVX1" "functional"
+ 
+//`timescale 1ns/10ps
+`celldefine
+module INVX1 (Y, A);
+	output Y;
+	input A;
+
+	// Function
+	not (Y, A);
+
+	// Timing
+	specify
+		(A => Y) = 0;
+	endspecify
+endmodule
+`endcelldefine
+
+
+
+//Verilog HDL for "KISTA_SOI_STDLIB", "NAND2X1" "functional"
+
+// type:  
+//`timescale 1ns/10ps
+`celldefine
+module NAND2X1 (Y, A, B);
+	output Y;
+	input A, B;
+
+	// Function
+	wire int_fwire_0;
+
+	and (int_fwire_0, A, B);
+	not (Y, int_fwire_0);
+
+	// Timing
+	specify
+		(A => Y) = 0;
+		(B => Y) = 0;
+	endspecify
+endmodule
+`endcelldefine
+
+
+
+//Verilog HDL for "KISTA_SOI_STDLIB", "NOR2X1" "functional"
+
+// type:  
+//`timescale 1ns/10ps
+`celldefine
+module NOR2X1 (Y, A, B);
+	output Y;
+	input A, B;
+
+	// Function
+	wire int_fwire_0;
+
+	or (int_fwire_0, A, B);
+	not (Y, int_fwire_0);
+
+	// Timing
+	specify
+		(A => Y) = 0;
+		(B => Y) = 0;
+	endspecify
+endmodule
+`endcelldefine
+
+
+

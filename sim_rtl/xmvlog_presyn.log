@@ -1,0 +1,18 @@
+xmvlog(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+xmvlog: Memory Usage - Current physical: 16.9M, Current virtual: 56.1M
+xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.0s, 86.4% cpu)
+
+---
+
+xmvlog(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+reg [7:0] out;
+            |
+xmvlog: *W,ILLPDX (../src/counter.v,16|12): Multiple declarations for a port not allowed in module with ANSI list of port declarations (port 'out') [12.3.4(IEEE-2001)].
+xmvlog: Memory Usage - Current physical: 16.9M, Current virtual: 56.1M
+xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.0s, 91.0% cpu)
+
+---
+
+xmvlog(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
+xmvlog: Memory Usage - Current physical: 17.2M, Current virtual: 56.1M
+xmvlog: CPU Usage - 0.0s system + 0.0s user = 0.0s total (0.0s, 90.4% cpu)

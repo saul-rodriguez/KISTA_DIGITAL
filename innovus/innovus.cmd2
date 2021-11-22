@@ -1,0 +1,50 @@
+#######################################################
+#                                                     
+#  Innovus Command Logging File                     
+#  Created on Mon Nov 22 13:47:04 2021                
+#                                                     
+#######################################################
+
+#@(#)CDS: Innovus v18.16-s077_1 (64bit) 11/08/2019 08:48 (Linux 2.6.18-194.el5)
+#@(#)CDS: NanoRoute 18.16-s077_1 NR191106-2227/18_16-UB (database version 2.30, 475.7.1) {superthreading v1.47}
+#@(#)CDS: AAE 18.16-s014 (64bit) 11/08/2019 (Linux 2.6.18-194.el5)
+#@(#)CDS: CTE 18.16-s015_1 () Nov  7 2019 23:40:47 ( )
+#@(#)CDS: SYNTECH 18.16-s012_1 () Oct 25 2019 10:46:42 ( )
+#@(#)CDS: CPE v18.16-s043
+#@(#)CDS: IQuantus/TQuantus 18.1.2-s824 (64bit) Thu Feb 28 20:18:51 PST 2019 (Linux 2.6.18-194.el5)
+
+set_global _enable_mmmc_by_default_flow      $CTE::mmmc_default
+suppressMessage ENCEXT-2799
+getVersion
+win
+encMessage warning 0
+encMessage debug 0
+encMessage info 0
+restoreDesign -cellview {FEOADesignlib counter counter_loaded_floorplan_power_pin_placed_cts_routed_final}
+setDrawView fplan
+encMessage warning 1
+encMessage debug 0
+encMessage info 1
+setDrawView place
+setLayerPreference layoutObj -isVisible 1
+zoomBox 236.60850 -37.47250 362.97350 40.03150
+fit
+zoomBox -22.91500 254.12200 19.15850 198.58550
+fit
+fit
+uiSetTool ruler
+setLayerPreference node_overlay -isVisible 1
+fit
+setLayerPreference node_inst -isVisible 0
+setLayerPreference node_inst -isVisible 1
+setLayerPreference groupmain_Congestion -isVisible 0
+setLayerPreference congestH -isVisible 0
+setLayerPreference congestV -isVisible 0
+setLayerPreference gcellOvflow -isVisible 0
+setLayerPreference congest -isVisible 0
+setLayerPreference congestObj -isVisible 0
+setLayerPreference groupmain_Congestion -isVisible 1
+setLayerPreference congestH -isVisible 1
+setLayerPreference congestV -isVisible 1
+setLayerPreference congest -isVisible 1
+setLayerPreference congestObj -isVisible 1

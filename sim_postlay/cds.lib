@@ -1,0 +1,5 @@
+include $CDSHOME/tools/inca/files/cds.lib
+define work_lib ./work_lib
+define work_sub ./work_sub
+define work ./work
+

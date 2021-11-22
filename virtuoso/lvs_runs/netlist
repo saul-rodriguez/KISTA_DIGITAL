@@ -1,0 +1,366 @@
+************************************************************************
+* auCdl Netlist:
+* 
+* Library Name:  COUNTER
+* Top Cell Name: counter
+* View Name:     schematic
+* Netlisted on:  Nov 22 07:52:08 2021
+************************************************************************
+
+*.BIPOLAR
+*.RESI = 2000 
+*.RESVAL
+*.CAPVAL
+*.DIOPERI
+*.DIOAREA
+*.EQUATION
+*.SCALE METER
+*.MEGA
+.PARAM
+
+*.GLOBAL VDD!
++        VSS!
+
+*.PIN VDD!
+*+    VSS!
+
+************************************************************************
+* Library Name: KISTA_SOI_STDLIB
+* Cell Name:    NOR2X1
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT NOR2X1 A B Y inh_VDD inh_VSS
+*.PININFO A:I B:I Y:O inh_VDD:B inh_VSS:B
+MM1 net9 A inh_VDD inh_VDD pmos3 W=4u L=1u
+MM0 Y B net9 net9 pmos3 W=4u L=1u
+MM3 Y A inh_VSS inh_VSS nmos3 W=2u L=1u
+MM2 Y B inh_VSS inh_VSS nmos3 W=2u L=1u
+.ENDS
+
+************************************************************************
+* Library Name: KISTA_SOI_STDLIB
+* Cell Name:    INVX1
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT INVX1 A Y inh_VDD inh_VSS
+*.PININFO A:I Y:O inh_VDD:B inh_VSS:B
+MM0 Y A inh_VSS inh_VSS nmos3 W=2u L=1u
+MM1 Y A inh_VDD inh_VDD pmos3 W=4u L=1u
+.ENDS
+
+************************************************************************
+* Library Name: KISTA_SOI_STDLIB
+* Cell Name:    NAND2X1
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT NAND2X1 A B Y inh_VDD inh_VSS
+*.PININFO A:I B:I Y:O inh_VDD:B inh_VSS:B
+MM1 Y B inh_VDD inh_VDD pmos3 W=4u L=1u
+MM0 Y A inh_VDD inh_VDD pmos3 W=4u L=1u
+MM3 net6 A inh_VSS inh_VSS nmos3 W=2u L=1u
+MM2 Y B net6 net6 nmos3 W=2u L=1u
+.ENDS
+
+************************************************************************
+* Library Name: KISTA_SOI_STDLIB
+* Cell Name:    BUFX2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT BUFX2 A Y inh_VDD inh_VSS
+*.PININFO A:I Y:O inh_VDD:B inh_VSS:B
+MM1 Y net6 inh_VSS inh_VSS nmos3 W=4u L=1u
+MM0 net6 A inh_VSS inh_VSS nmos3 W=2u L=1u
+MM3 Y net6 inh_VDD inh_VDD pmos3 W=8u L=1u
+MM2 net6 A inh_VDD inh_VDD pmos3 W=4u L=1u
+.ENDS
+
+************************************************************************
+* Library Name: KISTA_SOI_STDLIB
+* Cell Name:    DECAP1
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT DECAP1 inh_VDD inh_VSS
+*.PININFO inh_VDD:B inh_VSS:B
+MM0 inh_VSS inh_VDD inh_VSS inh_VSS nmos3 W=2u L=1u
+MM1 inh_VDD inh_VSS inh_VDD inh_VDD pmos3 W=4u L=1u
+.ENDS
+
+************************************************************************
+* Library Name: KISTA_SOI_STDLIB
+* Cell Name:    DECAP4
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT DECAP4 inh_VDD inh_VSS
+*.PININFO inh_VDD:B inh_VSS:B
+MM0 inh_VSS inh_VDD inh_VSS inh_VSS nmos3 W=8u L=1u m=4
+MM1 inh_VDD inh_VSS inh_VDD inh_VDD pmos3 W=8u L=1u m=4
+.ENDS
+
+************************************************************************
+* Library Name: KISTA_SOI_STDLIB
+* Cell Name:    DECAP2
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT DECAP2 inh_VDD inh_VSS
+*.PININFO inh_VDD:B inh_VSS:B
+MM0 inh_VSS inh_VDD inh_VSS inh_VSS nmos3 W=8u L=1u m=2
+MM1 inh_VDD inh_VSS inh_VDD inh_VDD pmos3 W=8u L=1u m=2
+.ENDS
+
+************************************************************************
+* Library Name: KISTA_SOI_STDLIB
+* Cell Name:    DFFX1
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT DFFX1 CK D Q QN inh_VDD inh_VSS
+*.PININFO CK:I D:I Q:O QN:O inh_VDD:B inh_VSS:B
+MM26 QN net055 inh_VSS inh_VSS nmos3 W=2u L=1u
+MM25 net055 qbint inh_VSS inh_VSS nmos3 W=2u L=1u
+MM23 Q qbint inh_VSS inh_VSS nmos3 W=2u L=1u
+MM19 n30 CKb net028 net028 nmos3 W=2u L=1u
+MM18 net028 qbint inh_VSS inh_VSS nmos3 W=2u L=1u
+MM17 qbint n30 inh_VSS inh_VSS nmos3 W=2u L=1u
+MM15 n30 CKbb mout mout nmos3 W=2u L=1u
+MM11 n20 CKbb net017 net017 nmos3 W=2u L=1u
+MM10 net017 mout inh_VSS inh_VSS nmos3 W=2u L=1u
+MM9 mout n20 inh_VSS inh_VSS nmos3 W=2u L=1u
+MM5 n20 CKb net13 net13 nmos3 W=2u L=1u
+MM4 net13 D inh_VSS inh_VSS nmos3 W=2u L=1u
+MM3 CKbb CKb inh_VSS inh_VSS nmos3 W=2u L=1u
+MM0 CKb CK inh_VSS inh_VSS nmos3 W=2u L=1u
+MM27 QN net055 inh_VDD inh_VDD pmos3 W=4u L=1u
+MM24 net055 qbint inh_VDD inh_VDD pmos3 W=4u L=1u
+MM22 Q qbint inh_VDD inh_VDD pmos3 W=4u L=1u
+MM21 n30 CKbb net029 net029 pmos3 W=4u L=1u
+MM20 net029 qbint inh_VDD inh_VDD pmos3 W=4u L=1u
+MM16 qbint n30 inh_VDD inh_VDD pmos3 W=4u L=1u
+MM14 n30 CKb mout mout pmos3 W=4u L=1u
+MM13 n20 CKb net018 net018 pmos3 W=4u L=1u
+MM12 net018 mout inh_VDD inh_VDD pmos3 W=4u L=1u
+MM8 mout n20 inh_VDD inh_VDD pmos3 W=4u L=1u
+MM7 n20 CKbb net14 net14 pmos3 W=4u L=1u
+MM6 net14 D inh_VDD inh_VDD pmos3 W=4u L=1u
+MM2 CKbb CKb inh_VDD inh_VDD pmos3 W=4u L=1u
+MM1 CKb CK inh_VDD inh_VDD pmos3 W=4u L=1u
+.ENDS
+
+************************************************************************
+* Library Name: COUNTER
+* Cell Name:    counter
+* View Name:    schematic
+************************************************************************
+
+.SUBCKT counter clk enable out<7> out<6> out<5> out<4> out<3> out<2> out<1> 
++ out<0> reset
+*.PININFO clk:I enable:I reset:I out<7>:O out<6>:O out<5>:O out<4>:O out<3>:O 
+*.PININFO out<2>:O out<1>:O out<0>:O
+Xg268__9682 FE_OFN1_reset n_18 n_25 VDD! VSS! / NOR2X1
+Xg289__6083 FE_OFN0_enable out[0]_58 n_7 VDD! VSS! / NOR2X1
+Xg281__1786 FE_OFN3_n_55 out<0> n_13 VDD! VSS! / NOR2X1
+Xg276__7675 n_13 n_7 n_18 VDD! VSS! / NOR2X1
+Xg279__1840 enable out[7]_65 n_3 VDD! VSS! / NOR2X1
+Xg231__9682 n_55 n_58 n_60 VDD! VSS! / NOR2X1
+Xg227__8780 reset n_63 n_65 VDD! VSS! / NOR2X1
+Xg228__3772 n_3 n_60 n_63 VDD! VSS! / NOR2X1
+Xg240__1786 out[7]_65 n_46 n_50 VDD! VSS! / NOR2X1
+Xg241__5953 out<7> n_47 n_49 VDD! VSS! / NOR2X1
+Xg236__1309 n_50 n_49 n_58 VDD! VSS! / NOR2X1
+Xg255__5019 FE_OFN3_n_55 n_28 n_35 VDD! VSS! / NOR2X1
+Xg282__5703 FE_OFN0_enable out[3]_61 n_10 VDD! VSS! / NOR2X1
+Xg245__7118 FE_OFN1_reset n_44 n_52 VDD! VSS! / NOR2X1
+Xg251__7114 n_10 n_35 n_44 VDD! VSS! / NOR2X1
+Xg248__5703 n_55 n_38 n_45 VDD! VSS! / NOR2X1
+Xg284__5953 enable out[4]_62 n_11 VDD! VSS! / NOR2X1
+Xg235__2683 reset n_53 n_59 VDD! VSS! / NOR2X1
+Xg244__7675 n_11 n_45 n_53 VDD! VSS! / NOR2X1
+Xg243__2391 n_55 n_41 n_54 VDD! VSS! / NOR2X1
+Xg287__7344 enable out[5]_63 n_4 VDD! VSS! / NOR2X1
+Xg233__1474 reset n_57 n_62 VDD! VSS! / NOR2X1
+Xg237__6877 n_4 n_54 n_57 VDD! VSS! / NOR2X1
+Xg238__2900 FE_OFN3_n_55 n_51 n_56 VDD! VSS! / NOR2X1
+Xg280__7114 FE_OFN0_enable out[6]_64 n_9 VDD! VSS! / NOR2X1
+Xg229__4296 FE_OFN1_reset n_61 n_64 VDD! VSS! / NOR2X1
+Xg234__4547 n_9 n_56 n_61 VDD! VSS! / NOR2X1
+Xg271__2683 FE_OFN3_n_55 n_19 n_23 VDD! VSS! / NOR2X1
+Xg288__2703 FE_OFN0_enable out[1]_59 n_6 VDD! VSS! / NOR2X1
+Xg257__7344 FE_OFN1_reset n_29 n_37 VDD! VSS! / NOR2X1
+Xg262__3772 n_6 n_23 n_29 VDD! VSS! / NOR2X1
+Xg266__4296 FE_OFN3_n_55 n_22 n_30 VDD! VSS! / NOR2X1
+Xg286__5795 FE_OFN0_enable out[2]_60 n_5 VDD! VSS! / NOR2X1
+Xg253__2250 FE_OFN1_reset n_36 n_42 VDD! VSS! / NOR2X1
+Xg259__1840 n_5 n_30 n_36 VDD! VSS! / NOR2X1
+Xg261__9906 out[5]_63 n_32 n_34 VDD! VSS! / NOR2X1
+Xg273__2900 out[3]_61 n_20 n_24 VDD! VSS! / NOR2X1
+Xg283__2250 out[1]_59 out[0]_58 n_14 VDD! VSS! / NOR2X1
+Xg247 n_47 n_46 VDD! VSS! / INVX1
+XFE_OFC2_n_55 n_55 FE_OFN2_n_55 VDD! VSS! / INVX1
+XFE_OFC3_n_55 FE_OFN2_n_55 FE_OFN3_n_55 VDD! VSS! / INVX1
+Xg298 enable n_55 VDD! VSS! / INVX1
+Xg258 n_34 n_40 VDD! VSS! / INVX1
+Xg270 n_24 n_27 VDD! VSS! / INVX1
+Xg278 n_14 n_16 VDD! VSS! / INVX1
+Xg263__1474 n_21 n_27 n_28 VDD! VSS! / NAND2X1
+Xg269__6877 out[3]_61 n_20 n_21 VDD! VSS! / NAND2X1
+Xg256__5795 n_31 n_32 n_38 VDD! VSS! / NAND2X1
+Xg265__8780 out[4]_62 n_27 n_31 VDD! VSS! / NAND2X1
+Xg252__6083 n_33 n_40 n_41 VDD! VSS! / NAND2X1
+Xg260__1857 out[5]_63 n_32 n_33 VDD! VSS! / NAND2X1
+Xg246__8757 n_43 n_47 n_51 VDD! VSS! / NAND2X1
+Xg254__5266 out[6]_64 n_40 n_43 VDD! VSS! / NAND2X1
+Xg285__5266 out[0]_58 out[1]_59 n_8 VDD! VSS! / NAND2X1
+Xg275__2391 n_16 n_8 n_19 VDD! VSS! / NAND2X1
+Xg272__1309 n_17 n_20 n_22 VDD! VSS! / NAND2X1
+Xg274__7118 out[2]_60 n_16 n_17 VDD! VSS! / NAND2X1
+Xg249__2703 out<6> n_34 n_47 VDD! VSS! / NAND2X1
+Xg267__4547 out<4> n_24 n_32 VDD! VSS! / NAND2X1
+Xg277__8757 out<2> n_14 n_20 VDD! VSS! / NAND2X1
+XCTS_ccl_a_buf_00007 clk CTS_2 VDD! VSS! / BUFX2
+XCTS_ccl_a_buf_00005 clk CTS_1 VDD! VSS! / BUFX2
+XFE_OFC0_enable enable FE_OFN0_enable VDD! VSS! / BUFX2
+XFE_OFC1_reset reset FE_OFN1_reset VDD! VSS! / BUFX2
+XFILLCAP_impl0_1 VDD! VSS! / DECAP1
+XFILLCAP_impl0_6 VDD! VSS! / DECAP1
+XFILLCAP_impl0_9 VDD! VSS! / DECAP1
+XFILLCAP_impl0_10 VDD! VSS! / DECAP1
+XFILLCAP_impl0_11 VDD! VSS! / DECAP1
+XFILLCAP_impl0_13 VDD! VSS! / DECAP1
+XFILLCAP_impl0_16 VDD! VSS! / DECAP1
+XFILLCAP_impl0_18 VDD! VSS! / DECAP1
+XFILLCAP_impl0_20 VDD! VSS! / DECAP1
+XFILLCAP_impl0_21 VDD! VSS! / DECAP1
+XFILLCAP_impl0_22 VDD! VSS! / DECAP1
+XFILLCAP_impl0_23 VDD! VSS! / DECAP1
+XFILLCAP_impl0_27 VDD! VSS! / DECAP1
+XFILLCAP_impl0_29 VDD! VSS! / DECAP1
+XFILLCAP_impl0_32 VDD! VSS! / DECAP1
+XFILLCAP_impl0_35 VDD! VSS! / DECAP1
+XFILLCAP_impl0_42 VDD! VSS! / DECAP1
+XFILLCAP_impl0_45 VDD! VSS! / DECAP1
+XFILLCAP_impl0_46 VDD! VSS! / DECAP1
+XFILLCAP_impl0_48 VDD! VSS! / DECAP1
+XFILLCAP_impl0_50 VDD! VSS! / DECAP1
+XFILLCAP_impl0_51 VDD! VSS! / DECAP1
+XFILLCAP_impl0_56 VDD! VSS! / DECAP1
+XFILLCAP_impl0_57 VDD! VSS! / DECAP1
+XFILLCAP_impl0_58 VDD! VSS! / DECAP1
+XFILLCAP_impl0_59 VDD! VSS! / DECAP1
+XFILLCAP_impl0_60 VDD! VSS! / DECAP1
+XFILLCAP_impl0_61 VDD! VSS! / DECAP1
+XFILLCAP_impl0_63 VDD! VSS! / DECAP1
+XFILLCAP_impl0_67 VDD! VSS! / DECAP1
+XFILLCAP_impl0_68 VDD! VSS! / DECAP1
+XFILLCAP_impl0_69 VDD! VSS! / DECAP1
+XFILLCAP_impl0_71 VDD! VSS! / DECAP1
+XFILLCAP_impl0_78 VDD! VSS! / DECAP1
+XFILLCAP_impl0_79 VDD! VSS! / DECAP1
+XFILLCAP_impl0_87 VDD! VSS! / DECAP1
+XFILLCAP_impl0_88 VDD! VSS! / DECAP1
+XFILLCAP_impl0_93 VDD! VSS! / DECAP1
+XFILLCAP_impl0_94 VDD! VSS! / DECAP1
+XFILLCAP_impl0_95 VDD! VSS! / DECAP1
+XFILLCAP_impl0_96 VDD! VSS! / DECAP1
+XFILLCAP_impl0_98 VDD! VSS! / DECAP1
+XFILLCAP_impl0_102 VDD! VSS! / DECAP1
+XFILLCAP_impl0_103 VDD! VSS! / DECAP1
+XFILLCAP_impl0_107 VDD! VSS! / DECAP1
+XFILLCAP_impl0_109 VDD! VSS! / DECAP1
+XFILLCAP_impl0_111 VDD! VSS! / DECAP1
+XFILLCAP_impl0_116 VDD! VSS! / DECAP1
+XFILLCAP_impl0_121 VDD! VSS! / DECAP1
+XFILLCAP_impl0_128 VDD! VSS! / DECAP1
+XFILLCAP_impl0_2 VDD! VSS! / DECAP4
+XFILLCAP_impl0_4 VDD! VSS! / DECAP4
+XFILLCAP_impl0_7 VDD! VSS! / DECAP4
+XFILLCAP_impl0_17 VDD! VSS! / DECAP4
+XFILLCAP_impl0_30 VDD! VSS! / DECAP4
+XFILLCAP_impl0_33 VDD! VSS! / DECAP4
+XFILLCAP_impl0_34 VDD! VSS! / DECAP4
+XFILLCAP_impl0_43 VDD! VSS! / DECAP4
+XFILLCAP_impl0_52 VDD! VSS! / DECAP4
+XFILLCAP_impl0_54 VDD! VSS! / DECAP4
+XFILLCAP_impl0_55 VDD! VSS! / DECAP4
+XFILLCAP_impl0_64 VDD! VSS! / DECAP4
+XFILLCAP_impl0_65 VDD! VSS! / DECAP4
+XFILLCAP_impl0_73 VDD! VSS! / DECAP4
+XFILLCAP_impl0_74 VDD! VSS! / DECAP4
+XFILLCAP_impl0_75 VDD! VSS! / DECAP4
+XFILLCAP_impl0_76 VDD! VSS! / DECAP4
+XFILLCAP_impl0_81 VDD! VSS! / DECAP4
+XFILLCAP_impl0_82 VDD! VSS! / DECAP4
+XFILLCAP_impl0_83 VDD! VSS! / DECAP4
+XFILLCAP_impl0_84 VDD! VSS! / DECAP4
+XFILLCAP_impl0_86 VDD! VSS! / DECAP4
+XFILLCAP_impl0_89 VDD! VSS! / DECAP4
+XFILLCAP_impl0_99 VDD! VSS! / DECAP4
+XFILLCAP_impl0_100 VDD! VSS! / DECAP4
+XFILLCAP_impl0_104 VDD! VSS! / DECAP4
+XFILLCAP_impl0_113 VDD! VSS! / DECAP4
+XFILLCAP_impl0_114 VDD! VSS! / DECAP4
+XFILLCAP_impl0_117 VDD! VSS! / DECAP4
+XFILLCAP_impl0_118 VDD! VSS! / DECAP4
+XFILLCAP_impl0_119 VDD! VSS! / DECAP4
+XFILLCAP_impl0_120 VDD! VSS! / DECAP4
+XFILLCAP_impl0_122 VDD! VSS! / DECAP4
+XFILLCAP_impl0_123 VDD! VSS! / DECAP4
+XFILLCAP_impl0_124 VDD! VSS! / DECAP4
+XFILLCAP_impl0_125 VDD! VSS! / DECAP4
+XFILLCAP_impl0_126 VDD! VSS! / DECAP4
+XFILLCAP_impl0_127 VDD! VSS! / DECAP4
+XFILLCAP_impl0_3 VDD! VSS! / DECAP2
+XFILLCAP_impl0_5 VDD! VSS! / DECAP2
+XFILLCAP_impl0_8 VDD! VSS! / DECAP2
+XFILLCAP_impl0_12 VDD! VSS! / DECAP2
+XFILLCAP_impl0_14 VDD! VSS! / DECAP2
+XFILLCAP_impl0_15 VDD! VSS! / DECAP2
+XFILLCAP_impl0_19 VDD! VSS! / DECAP2
+XFILLCAP_impl0_24 VDD! VSS! / DECAP2
+XFILLCAP_impl0_25 VDD! VSS! / DECAP2
+XFILLCAP_impl0_26 VDD! VSS! / DECAP2
+XFILLCAP_impl0_28 VDD! VSS! / DECAP2
+XFILLCAP_impl0_31 VDD! VSS! / DECAP2
+XFILLCAP_impl0_36 VDD! VSS! / DECAP2
+XFILLCAP_impl0_37 VDD! VSS! / DECAP2
+XFILLCAP_impl0_38 VDD! VSS! / DECAP2
+XFILLCAP_impl0_39 VDD! VSS! / DECAP2
+XFILLCAP_impl0_40 VDD! VSS! / DECAP2
+XFILLCAP_impl0_41 VDD! VSS! / DECAP2
+XFILLCAP_impl0_44 VDD! VSS! / DECAP2
+XFILLCAP_impl0_47 VDD! VSS! / DECAP2
+XFILLCAP_impl0_49 VDD! VSS! / DECAP2
+XFILLCAP_impl0_53 VDD! VSS! / DECAP2
+XFILLCAP_impl0_62 VDD! VSS! / DECAP2
+XFILLCAP_impl0_66 VDD! VSS! / DECAP2
+XFILLCAP_impl0_70 VDD! VSS! / DECAP2
+XFILLCAP_impl0_72 VDD! VSS! / DECAP2
+XFILLCAP_impl0_77 VDD! VSS! / DECAP2
+XFILLCAP_impl0_80 VDD! VSS! / DECAP2
+XFILLCAP_impl0_85 VDD! VSS! / DECAP2
+XFILLCAP_impl0_90 VDD! VSS! / DECAP2
+XFILLCAP_impl0_91 VDD! VSS! / DECAP2
+XFILLCAP_impl0_92 VDD! VSS! / DECAP2
+XFILLCAP_impl0_97 VDD! VSS! / DECAP2
+XFILLCAP_impl0_101 VDD! VSS! / DECAP2
+XFILLCAP_impl0_105 VDD! VSS! / DECAP2
+XFILLCAP_impl0_106 VDD! VSS! / DECAP2
+XFILLCAP_impl0_108 VDD! VSS! / DECAP2
+XFILLCAP_impl0_110 VDD! VSS! / DECAP2
+XFILLCAP_impl0_112 VDD! VSS! / DECAP2
+XFILLCAP_impl0_115 VDD! VSS! / DECAP2
+Xout_reg[0] CTS_2 n_25 out<0> out[0]_58 VDD! VSS! / DFFX1
+Xout_reg[7] CTS_1 n_65 out<7> out[7]_65 VDD! VSS! / DFFX1
+Xout_reg[3] CTS_1 n_52 out<3> out[3]_61 VDD! VSS! / DFFX1
+Xout_reg[4] CTS_1 n_59 out<4> out[4]_62 VDD! VSS! / DFFX1
+Xout_reg[5] CTS_1 n_62 out<5> out[5]_63 VDD! VSS! / DFFX1
+Xout_reg[6] CTS_2 n_64 out<6> out[6]_64 VDD! VSS! / DFFX1
+Xout_reg[1] CTS_2 n_37 out<1> out[1]_59 VDD! VSS! / DFFX1
+Xout_reg[2] CTS_2 n_42 out<2> out[2]_60 VDD! VSS! / DFFX1
+.ENDS
+
