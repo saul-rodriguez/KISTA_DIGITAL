@@ -11,9 +11,9 @@
 	View         = config
 	Simulator    = ams
 	State Path   = $AXL_SETUPDB_DIR/test_states
-	State Name   = COUNTER:counter_tb:1_none_Interactive.8
-	Results DB   = /home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.8.rdb
-	Results Dir  = /home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.8/1/COUNTER:counter_tb:1
+	State Name   = COUNTER:counter_tb:2_none_Interactive.18
+	Results DB   = /home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.18.rdb
+	Results Dir  = /home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.18/1/COUNTER:counter_tb:2
 	Results Loc  = /home/saul/simulation/COUNTER/counter_tb/adexl/results/data
 	Project Dir  = /home/saul/simulation
 	Setup DB loc = /home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl
@@ -30,8 +30,8 @@ variable persistNewList redefined
 
 
 
-*Info*    Run start for Point ID (8 1) on testbench [
-          COUNTER:counter_tb:1 ].
+*Info*    Run start for Point ID (2 1) on testbench [
+          COUNTER:counter_tb:2 ].
 
 Resetting statistical vars
 
@@ -40,14 +40,14 @@ Resetting statistical vars
 Setting temp(T) = 27
 
 *Info*    Netlist Directory =
-          /home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.8/1/COUNTER:counter_tb:1/netlist
+          /home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.18/1/COUNTER:counter_tb:2/netlist
 
 
 *Info*    Data Directory    =
-          /home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.8/1/COUNTER:counter_tb:1
+          /home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.18/1/COUNTER:counter_tb:2
 
 
-*Info*    Creating Netlist for Point ID (8 1)
+*Info*    Creating Netlist for Point ID (2 1)
 
 generate netlist...
 INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
@@ -55,10 +55,10 @@ INFO (AMS-2031): The instances bound to the views specified in the 'Netlist usin
  field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
  analog primitives using the Spectre CDF simulation information.
 Initializing the control file using cp:
-    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.8/1/COUNTER:counter_tb:1/netlist/digital/control
-Begin Netlisting Nov 22 10:04:06 2021
+    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.ver /home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.18/1/COUNTER:counter_tb:2/netlist/digital/control
+Begin Netlisting Nov 22 23:36:46 2021
 INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
-"/home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.8/1/COUNTER:counter_tb:1/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+"/home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.18/1/COUNTER:counter_tb:2/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
 simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
 before invoking Verilog netlister.
  
@@ -81,15 +81,21 @@ INFO (VLOGNET-117): Re-netlisting the entire design.
 INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
 non-stopping cells.
  
-WARNING (VLOGNET-110): The cell 'KISTA_SOI_STDLIB/DECAP1/schematic' has no ports. Make sure that this was the intended 
-design.
- 
-WARNING (VLOGNET-110): The cell 'KISTA_SOI_STDLIB/DECAP4/schematic' has no ports. Make sure that this was the intended 
-design.
- 
-WARNING (VLOGNET-110): The cell 'KISTA_SOI_STDLIB/DECAP2/schematic' has no ports. Make sure that this was the intended 
-design.
- 
+INFO (AMS-2050): The following cells will be netlisted without using the spectre CDF
+ simulation information, because they are bound to view symbol:
+ ' *** Library - KISTA_SOI_STDLIB  Cell - DFFX1 ***
+              *** Library - KISTA_SOI_STDLIB  Cell - DECAP2 ***
+              *** Library - KISTA_SOI_STDLIB  Cell - DECAP4 ***
+              *** Library - KISTA_SOI_STDLIB  Cell - DECAP1 ***
+              *** Library - KISTA_SOI_STDLIB  Cell - BUFX2 ***
+              *** Library - KISTA_SOI_STDLIB  Cell - NAND2X1 ***
+              *** Library - KISTA_SOI_STDLIB  Cell - INVX1 ***
+              *** Library - KISTA_SOI_STDLIB  Cell - NOR2X1 ***
+             '. To use the spectre CDF simulation information, do one of the following:
+     1. Open your configuration in Hierarchy Editor and replace 'symbol' 
+ with 'spectre' in the view list and stop list. 
+      2. Choose Simulation->Options-> AMS Simulator->Netlister and add 'symbol' 
+ in the 'Netlist using spectre CDF simInfo' field.
 INFO (VLOGNET-169): Module port ordering for lib 'COUNTER', cell 'counter', view 'schematic' will be
  done using the user specified port order as follows:
 
@@ -105,90 +111,28 @@ INFO (VLOGNET-126): ---------- Beginning netlist configuration information -----
 CELL NAME                   VIEW NAME            NOTE             
 ---------                   ---------            ----             
 
-pmos3                       spectre              *Stopping View*  
-nmos3                       spectre              *Stopping View*  
+NOR2X1                      symbol               *Stopping View*  
+INVX1                       symbol               *Stopping View*  
+NAND2X1                     symbol               *Stopping View*  
+BUFX2                       symbol               *Stopping View*  
+DECAP1                      symbol               *Stopping View*  
+DECAP4                      symbol               *Stopping View*  
+DECAP2                      symbol               *Stopping View*  
+DFFX1                       symbol               *Stopping View*  
 counter_stimulus            verilogams           *Stopping View*  
 cap                         spectre              *Stopping View*  
 vdc                         spectre              *Stopping View*  
 counter_tb                  schematic                             
 counter                     schematic                             
-DFFX1                       schematic                             
-DECAP2                      schematic                             
-DECAP4                      schematic                             
-DECAP1                      schematic                             
-BUFX2                       schematic                             
-NAND2X1                     schematic                             
-INVX1                       schematic                             
-NOR2X1                      schematic                             
 
 ---------- End of netlist configuration information   ----------
 Initializing the control file using cp:
-    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.8/1/COUNTER:counter_tb:1/netlist/analog/control
+    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.18/1/COUNTER:counter_tb:2/netlist/analog/control
 Copying Spectre source file 'spectre.inp'
 Copying Spectre command file 'spectre.sim'
-WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
-           than the actual number of terminals in the cellview cell-view "KISTA_SOI_STDLIB" "NOR2X1" "schematic"
-WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
-           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
-           be ignored. The terminals in the cellView will be netlisted in the alphabetical
-           order of their names. Eliminate the mismatch if you want the CDF termOrder
-           property to be used for netlisting.
-           To edit CDF of a cell, 
-           i) Open CIW->Tools->CDF->Edit.
-           ii) Select Library Name & Cell Name.
-           iii) Click on the Edit button in the simulation information section of the
-                Edit CDF window.
-WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
-           than the actual number of terminals in the cellview cell-view "KISTA_SOI_STDLIB" "INVX1" "schematic"
-WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
-           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
-           be ignored. The terminals in the cellView will be netlisted in the alphabetical
-           order of their names. Eliminate the mismatch if you want the CDF termOrder
-           property to be used for netlisting.
-           To edit CDF of a cell, 
-           i) Open CIW->Tools->CDF->Edit.
-           ii) Select Library Name & Cell Name.
-           iii) Click on the Edit button in the simulation information section of the
-                Edit CDF window.
-WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
-           than the actual number of terminals in the cellview cell-view "KISTA_SOI_STDLIB" "NAND2X1" "schematic"
-WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
-           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
-           be ignored. The terminals in the cellView will be netlisted in the alphabetical
-           order of their names. Eliminate the mismatch if you want the CDF termOrder
-           property to be used for netlisting.
-           To edit CDF of a cell, 
-           i) Open CIW->Tools->CDF->Edit.
-           ii) Select Library Name & Cell Name.
-           iii) Click on the Edit button in the simulation information section of the
-                Edit CDF window.
-WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
-           than the actual number of terminals in the cellview cell-view "KISTA_SOI_STDLIB" "BUFX2" "schematic"
-WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
-           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
-           be ignored. The terminals in the cellView will be netlisted in the alphabetical
-           order of their names. Eliminate the mismatch if you want the CDF termOrder
-           property to be used for netlisting.
-           To edit CDF of a cell, 
-           i) Open CIW->Tools->CDF->Edit.
-           ii) Select Library Name & Cell Name.
-           iii) Click on the Edit button in the simulation information section of the
-                Edit CDF window.
-WARNING (ADE-6001): The number of terminals specified in CDF termOrder are more
-           than the actual number of terminals in the cellview cell-view "KISTA_SOI_STDLIB" "DFFX1" "schematic"
-WARNING (ADE-6004): Mismatch was found between the terminals in the cellView and those on the
-           termOrder property on the CDF. Because of the mismatch, the CDF termOrder will
-           be ignored. The terminals in the cellView will be netlisted in the alphabetical
-           order of their names. Eliminate the mismatch if you want the CDF termOrder
-           property to be used for netlisting.
-           To edit CDF of a cell, 
-           i) Open CIW->Tools->CDF->Edit.
-           ii) Select Library Name & Cell Name.
-           iii) Click on the Edit button in the simulation information section of the
-                Edit CDF window.
 Running netlist assembly..
 
-End netlisting Nov 22 10:04:15 2021
+End netlisting Nov 22 23:36:55 2021
 INFO (AMS-1241): AMS UNL netlisting has completed successfully.
 To view the modules, right-click the test name on the Tests and Analyses 
 assistant pane and choose Netlist->Display menu option.
@@ -198,10 +142,10 @@ create cds_globals...
 compose simulator input file...
       ...successful.
 
-*Info*    Running simulation on testbench [ COUNTER:counter_tb:1 ]
-          for Point ID (8 1).
+*Info*    Running simulation on testbench [ COUNTER:counter_tb:2 ]
+          for Point ID (2 1).
 
-Delete simulation data in /home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.8/1/COUNTER:counter_tb:1/psf.
+Delete simulation data in /home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.18/1/COUNTER:counter_tb:2/psf.
 create cds_globals...
       ...successful.
 compose simulator input file...
@@ -212,15 +156,145 @@ running...
 To check for output from compilation, elaboration and simulation run, 
 right-click on the test name, result name, or any value in the "Results" 
 tab of the Outputs section and choose "Output Log" menu option.
-INFO (ADE-3071): Simulation completed successfully.
-reading simulation data...
+INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
+        on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
+        to view the simulation run log.
+INFO (ADEXL-1654): Simulator 'ams' doesn't provide simulation failure
+        information at the analysis level. So 'SkipFailedAnalyses' for option
+        'evalOutputsOnSimFailure' wouldn't work for this simulator.
+
+*Error*   Error ID  = 5031
+*Error*   Error Msg = Simulator failed to complete the simulation.
+ 
+
+
+
+
+
+
+
+
+
+*Info*    Run start for Point ID (2 1) on testbench [
+          COUNTER:counter_tb:2 ].
+
+Resetting statistical vars
+
+*Info*    Setting parameter values ...
+
+Setting temp(T) = 27
+
+*Info*    Netlist Directory =
+          /home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.18/1/COUNTER:counter_tb:2/netlist
+
+
+*Info*    Data Directory    =
+          /home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.18/1/COUNTER:counter_tb:2
+
+
+*Info*    Creating Netlist for Point ID (2 1)
+
+generate netlist...
+INFO (AMS-2142): The AMS Unified Netlisting (AMS UNL) flow has been enabled.
+INFO (AMS-2031): The instances bound to the views specified in the 'Netlist using spectre CDF simInfo'
+ field in the Netlister form (Simulation->Options->Netlister) will be netlisted as
+ analog primitives using the Spectre CDF simulation information.
+Begin Netlisting Nov 22 23:37:07 2021
+INFO (VLOGNET-60): The stimulus name mapped table will not be printed in the 
+"/home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.18/1/COUNTER:counter_tb:2/netlist/digital/testfixture.verilog" file. To print the stimulus name mapped table, set 
+simVerilogPrintStimulusNameMappingTable = t either in CIW or the .simrc file 
+before invoking Verilog netlister.
+ 
+INFO (VLOGNET-62): Database internal net names will be printed for floating instance ports. To prevent 
+them from being printed, set simVerilogProcessNullPorts = t either in CIW or 
+the .simrc file.
+ 
+INFO (VLOGNET-64): All cellviews in the design will be printed in the Netlist Configuration list. 
+If you want to print only those cellviews that need to be re-netlisted in the 
+list, set simVerilogIncrementalNetlistConfigList = t either in CIW or the 
+.simrc file.
+ 
+INFO (VLOGNET-68): The initial state of stimulus of all inout pins is set to "z". To get inout 
+pins with initial state of "0", set hnlVerilogIOInitStimulusStr = "0" 
+either in CIW or the .simrc file.
+ 
+INFO (VLOGNET-118): Using connection by name (explicit connections) for all stopping and 
+non-stopping cells.
+ 
+INFO (AMS-2050): The following cells will be netlisted without using the spectre CDF
+ simulation information, because they are bound to view symbol:
+ ' *** Library - KISTA_SOI_STDLIB  Cell - DFFX1 ***
+              *** Library - KISTA_SOI_STDLIB  Cell - DECAP2 ***
+              *** Library - KISTA_SOI_STDLIB  Cell - DECAP4 ***
+              *** Library - KISTA_SOI_STDLIB  Cell - DECAP1 ***
+              *** Library - KISTA_SOI_STDLIB  Cell - BUFX2 ***
+              *** Library - KISTA_SOI_STDLIB  Cell - NAND2X1 ***
+              *** Library - KISTA_SOI_STDLIB  Cell - INVX1 ***
+              *** Library - KISTA_SOI_STDLIB  Cell - NOR2X1 ***
+             '. To use the spectre CDF simulation information, do one of the following:
+     1. Open your configuration in Hierarchy Editor and replace 'symbol' 
+ with 'spectre' in the view list and stop list. 
+      2. Choose Simulation->Options-> AMS Simulator->Netlister and add 'symbol' 
+ in the 'Netlist using spectre CDF simInfo' field.
+INFO (VLOGNET-126): ---------- Beginning netlist configuration information ----------
+
+
+                (incremental data only)
+
+CELL NAME                   VIEW NAME            NOTE             
+---------                   ---------            ----             
+
+NOR2X1                      symbol               *Stopping View*  
+INVX1                       symbol               *Stopping View*  
+NAND2X1                     symbol               *Stopping View*  
+BUFX2                       symbol               *Stopping View*  
+DECAP1                      symbol               *Stopping View*  
+DECAP4                      symbol               *Stopping View*  
+DECAP2                      symbol               *Stopping View*  
+DFFX1                       symbol               *Stopping View*  
+counter_stimulus            verilogams           *Stopping View*  
+cap                         spectre              *Stopping View*  
+vdc                         spectre              *Stopping View*  
+
+---------- End of netlist configuration information   ----------
+Initializing the control file using cp:
+    cp /pkg/cadence/installs/IC618/tools.lnx86/dfII/etc/si/control.spectre /home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.18/1/COUNTER:counter_tb:2/netlist/analog/control
+Copying Spectre source file 'spectre.inp'
+Copying Spectre command file 'spectre.sim'
+Running netlist assembly..
+
+End netlisting Nov 22 23:37:13 2021
+INFO (AMS-1241): AMS UNL netlisting has completed successfully.
+To view the modules, right-click the test name on the Tests and Analyses 
+assistant pane and choose Netlist->Display menu option.
       ...successful.
-*Info*    Client has finished evaluating ... 
+create cds_globals...
+      ...successful.
+compose simulator input file...
+      ...successful.
 
+*Info*    Running simulation on testbench [ COUNTER:counter_tb:2 ]
+          for Point ID (2 1).
 
-*Info*    Run complete for Point ID (8 1) on testbench [
-          COUNTER:counter_tb:1 ].
+Delete simulation data in /home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.18/1/COUNTER:counter_tb:2/psf.
+compose simulator input file...
+      ...successful.
+validating simulator hierarchy...
+      ...successful.
+running...
+To check for output from compilation, elaboration and simulation run, 
+right-click on the test name, result name, or any value in the "Results" 
+tab of the Outputs section and choose "Output Log" menu option.
+INFO (ADE-3067): Errors encountered during simulation. For more information, right-click
+        on a test name in the 'Results' tab of the Outputs pane and choose 'Output Log'
+        to view the simulation run log.
+INFO (ADEXL-1654): Simulator 'ams' doesn't provide simulation failure
+        information at the analysis level. So 'SkipFailedAnalyses' for option
+        'evalOutputsOnSimFailure' wouldn't work for this simulator.
 
+*Error*   Error ID  = 5031
+*Error*   Error Msg = Simulator failed to complete the simulation.
+ 
 
 
 

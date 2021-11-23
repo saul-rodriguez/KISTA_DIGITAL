@@ -1,9 +1,9 @@
 xmvlog(64): 18.03-s018: (c) Copyright 1995-2019 Cadence Design Systems, Inc.
-TOOL:	xmvlog(64)	18.03-s018: Started on Nov 22, 2021 at 10:55:46 CET
+TOOL:	xmvlog(64)	18.03-s018: Started on Nov 23, 2021 at 14:05:18 CET
 xmvlog
     -use5x
     -SPECIFICUNIT counter_stimulus
-    -zparse /tmp/vamsZparyda236
+    -zparse /tmp/vamsZparld2525
     -NOWARN DLNOHV
     -work COUNTER
     -view verilogams
@@ -18,4 +18,4 @@ file: /home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_stimulus/verilo
 	module COUNTER.counter_stimulus:verilogams
 		errors: 0, warnings: 0
 	 writing out DPL output:
-TOOL:	xmvlog(64)	18.03-s018: Exiting on Nov 22, 2021 at 10:55:46 CET  (total: 00:00:00)
+TOOL:	xmvlog(64)	18.03-s018: Exiting on Nov 23, 2021 at 14:05:18 CET  (total: 00:00:00)

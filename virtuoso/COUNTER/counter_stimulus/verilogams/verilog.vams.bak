@@ -25,9 +25,9 @@ module counter_stimulus (clk, enable, reset  );
  #500 $finish;
  end
 
- initial begin
-   $sdf_annotate("/home/saul/projects/KISTA_DIGITAL/innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf");
- end
+ //initial begin
+ //  $sdf_annotate("/home/saul/projects/KISTA_DIGITAL/innovus/output/TOP_TM_typ_RC_1_8V_25C.sdf",I0,,"sdf.log","MAXIMUM");
+ //end
     
   always begin
 #10 clk = ~clk;

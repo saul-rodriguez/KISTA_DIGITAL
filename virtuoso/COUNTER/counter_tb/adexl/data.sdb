@@ -14,7 +14,7 @@
 		<currentmode>Single Run, Sweeps and Corners</currentmode>
 		<overwritehistory>0</overwritehistory>
 		<tests>
-			<test>COUNTER:counter_tb:1
+			<test enabled="1">COUNTER:counter_tb:1
 				<tool>ADE</tool>
 				<tooloptions>
 					<option>cell
@@ -34,6 +34,43 @@
 					</option>
 					<option>state
 						<value>COUNTER:counter_tb:1_active</value>
+					</option>
+				</tooloptions>
+				<origoptions>
+					<option>cell
+						<value>counter_tb</value>
+					</option>
+					<option>lib
+						<value>COUNTER</value>
+					</option>
+					<option>sim
+						<value>ams</value>
+					</option>
+					<option>view
+						<value>config</value>
+					</option>
+				</origoptions>
+			</test>
+			<test>COUNTER:counter_tb:2
+				<tool>ADE</tool>
+				<tooloptions>
+					<option>cell
+						<value>counter_tb</value>
+					</option>
+					<option>lib
+						<value>COUNTER</value>
+					</option>
+					<option>sim
+						<value>ams</value>
+					</option>
+					<option>view
+						<value>config</value>
+					</option>
+					<option>path
+						<value>$AXL_SETUPDB_DIR/test_states</value>
+					</option>
+					<option>state
+						<value>COUNTER:counter_tb:2_active</value>
 					</option>
 				</tooloptions>
 				<origoptions>
@@ -76,9 +113,12 @@
 				<value></value>
 			</plottingoption>
 		</plottingoptions>
+		<disabledtests>
+			<test>COUNTER:counter_tb:1</test>
+		</disabledtests>
 	</active>
 	<history>History
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.2
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.19
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -93,7 +133,7 @@
 				<currentmode>Single Run, Sweeps and Corners</currentmode>
 				<overwritehistory>0</overwritehistory>
 				<tests>
-					<test>COUNTER:counter_tb:1
+					<test enabled="1">COUNTER:counter_tb:1
 						<tool>ADE</tool>
 						<tooloptions>
 							<option>cell
@@ -112,7 +152,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>COUNTER:counter_tb:1_none_Interactive.2</value>
+								<value>COUNTER:counter_tb:1_none_Interactive.19</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -130,67 +170,7 @@
 							</option>
 						</origoptions>
 					</test>
-				</tests>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottingmode
-						<value>Replace</value>
-					</plottingoption>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>useMaestroPlottingTemplate
-						<value>yes</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>allplottingtemplates
-						<value></value>
-					</plottingoption>
-					<plottingoption>defaultplottingtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Nov 22 09:09:59 2021</timestamp>
-			<uuid>{1cb4b946-6e67-4817-8c90-71195bb29445}</uuid>
-			<resultsname>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.2.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.2.rdb</simresults>
-			<rawdatadelstrategy>SaveAll
-				<simdatasavemode>All</simdatasavemode>
-			</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_saul_090959086</localpsfdir>
-			<psfdir>/home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.2</psfdir>
-			<simdir>$AXL_PROJECT_DIR/COUNTER/counter_tb/adexl/results/data/Interactive.2</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.2.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.2.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.3
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>COUNTER:counter_tb:1
+					<test>COUNTER:counter_tb:2
 						<tool>ADE</tool>
 						<tooloptions>
 							<option>cell
@@ -209,395 +189,7 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>COUNTER:counter_tb:1_none_Interactive.3</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>counter_tb</value>
-							</option>
-							<option>lib
-								<value>COUNTER</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottingmode
-						<value>Replace</value>
-					</plottingoption>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>useMaestroPlottingTemplate
-						<value>yes</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>allplottingtemplates
-						<value></value>
-					</plottingoption>
-					<plottingoption>defaultplottingtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Nov 22 09:18:22 2021</timestamp>
-			<uuid>{7e7e0946-af56-4480-8a2b-dc1b000cea05}</uuid>
-			<resultsname>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.3.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.3.rdb</simresults>
-			<rawdatadelstrategy>SaveAll
-				<simdatasavemode>All</simdatasavemode>
-			</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_saul_091822981</localpsfdir>
-			<psfdir>/home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.3</psfdir>
-			<simdir>$AXL_PROJECT_DIR/COUNTER/counter_tb/adexl/results/data/Interactive.3</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.3.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.3.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.4
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>COUNTER:counter_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>counter_tb</value>
-							</option>
-							<option>lib
-								<value>COUNTER</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>COUNTER:counter_tb:1_none_Interactive.4</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>counter_tb</value>
-							</option>
-							<option>lib
-								<value>COUNTER</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottingmode
-						<value>Replace</value>
-					</plottingoption>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>useMaestroPlottingTemplate
-						<value>yes</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>allplottingtemplates
-						<value></value>
-					</plottingoption>
-					<plottingoption>defaultplottingtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Nov 22 09:25:13 2021</timestamp>
-			<uuid>{9a981071-48ff-432f-a79a-a0f4cf4d439a}</uuid>
-			<resultsname>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.4.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.4.rdb</simresults>
-			<rawdatadelstrategy>SaveAll
-				<simdatasavemode>All</simdatasavemode>
-			</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_saul_092513563</localpsfdir>
-			<psfdir>/home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.4</psfdir>
-			<simdir>$AXL_PROJECT_DIR/COUNTER/counter_tb/adexl/results/data/Interactive.4</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.4.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.4.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.5
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>COUNTER:counter_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>counter_tb</value>
-							</option>
-							<option>lib
-								<value>COUNTER</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>COUNTER:counter_tb:1_none_Interactive.5</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>counter_tb</value>
-							</option>
-							<option>lib
-								<value>COUNTER</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottingmode
-						<value>Replace</value>
-					</plottingoption>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>useMaestroPlottingTemplate
-						<value>yes</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>allplottingtemplates
-						<value></value>
-					</plottingoption>
-					<plottingoption>defaultplottingtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Nov 22 09:26:33 2021</timestamp>
-			<uuid>{2d7071c9-a2f3-404e-8c7f-ace42ec27224}</uuid>
-			<resultsname>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.5.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.5.rdb</simresults>
-			<rawdatadelstrategy>SaveAll
-				<simdatasavemode>All</simdatasavemode>
-			</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_saul_092633216</localpsfdir>
-			<psfdir>/home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.5</psfdir>
-			<simdir>$AXL_PROJECT_DIR/COUNTER/counter_tb/adexl/results/data/Interactive.5</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.5.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.5.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.6
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>COUNTER:counter_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>counter_tb</value>
-							</option>
-							<option>lib
-								<value>COUNTER</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>COUNTER:counter_tb:1_none_Interactive.6</value>
-							</option>
-						</tooloptions>
-						<origoptions>
-							<option>cell
-								<value>counter_tb</value>
-							</option>
-							<option>lib
-								<value>COUNTER</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-						</origoptions>
-					</test>
-				</tests>
-				<overwritehistoryname>Interactive.0</overwritehistoryname>
-				<plottingoptions>
-					<plottingoption>plottingmode
-						<value>Replace</value>
-					</plottingoption>
-					<plottingoption>plottype
-						<value>None</value>
-					</plottingoption>
-					<plottingoption>usewaveformtemplate
-						<value>no</value>
-					</plottingoption>
-					<plottingoption>useMaestroPlottingTemplate
-						<value>yes</value>
-					</plottingoption>
-					<plottingoption>waveformtemplate
-						<value></value>
-					</plottingoption>
-					<plottingoption>allplottingtemplates
-						<value></value>
-					</plottingoption>
-					<plottingoption>defaultplottingtemplate
-						<value></value>
-					</plottingoption>
-				</plottingoptions>
-				<sortVariableValues>0</sortVariableValues>
-			</checkpoint>
-			<timestamp>Nov 22 09:28:22 2021</timestamp>
-			<uuid>{f1526621-133f-46d0-8161-d2de376c31bc}</uuid>
-			<resultsname>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.6.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.6.rdb</simresults>
-			<rawdatadelstrategy>SaveAll
-				<simdatasavemode>All</simdatasavemode>
-			</rawdatadelstrategy>
-			<netlistdelstrategy>SaveAll</netlistdelstrategy>
-			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_saul_092822561</localpsfdir>
-			<psfdir>/home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.6</psfdir>
-			<simdir>$AXL_PROJECT_DIR/COUNTER/counter_tb/adexl/results/data/Interactive.6</simdir>
-			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.6.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.6.log</runlogfile>
-			<schematicpoint></schematicpoint>
-			<test>all</test>
-		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.7
-			<checkpoint>
-				<corners>
-					<corner enabled="1">_default</corner>
-				</corners>
-				<extensions>
-					<extension>Parasitics
-						<callback>_parSetupDBExtensionCB</callback>
-						<iconvalue></iconvalue>
-						<icontype></icontype>
-					</extension>
-				</extensions>
-				<currentmode>Single Run, Sweeps and Corners</currentmode>
-				<overwritehistory>0</overwritehistory>
-				<tests>
-					<test>COUNTER:counter_tb:1
-						<tool>ADE</tool>
-						<tooloptions>
-							<option>cell
-								<value>counter_tb</value>
-							</option>
-							<option>lib
-								<value>COUNTER</value>
-							</option>
-							<option>sim
-								<value>ams</value>
-							</option>
-							<option>view
-								<value>config</value>
-							</option>
-							<option>path
-								<value>$AXL_SETUPDB_DIR/test_states</value>
-							</option>
-							<option>state
-								<value>COUNTER:counter_tb:1_none_Interactive.7</value>
+								<value>COUNTER:counter_tb:2_none_Interactive.19</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -640,27 +232,30 @@
 						<value></value>
 					</plottingoption>
 				</plottingoptions>
+				<disabledtests>
+					<test>COUNTER:counter_tb:1</test>
+				</disabledtests>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Nov 22 09:29:21 2021</timestamp>
-			<uuid>{f291f68c-ba4e-48a4-80dd-85b60580f99c}</uuid>
-			<resultsname>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.7.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.7.rdb</simresults>
+			<timestamp>Nov 22 23:38:03 2021</timestamp>
+			<uuid>{b7314ab3-b7f1-47a0-821d-dd7a38fd12e0}</uuid>
+			<resultsname>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.19.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.19.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_saul_092921338</localpsfdir>
-			<psfdir>/home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.7</psfdir>
-			<simdir>$AXL_PROJECT_DIR/COUNTER/counter_tb/adexl/results/data/Interactive.7</simdir>
+			<localpsfdir>/tmp/s2424_saul_233803785</localpsfdir>
+			<psfdir>/home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.19</psfdir>
+			<simdir>$AXL_PROJECT_DIR/COUNTER/counter_tb/adexl/results/data/Interactive.19</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.7.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.7.log</runlogfile>
+			<runlog>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.19.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.19.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.8
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.20
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -675,7 +270,7 @@
 				<currentmode>Single Run, Sweeps and Corners</currentmode>
 				<overwritehistory>0</overwritehistory>
 				<tests>
-					<test>COUNTER:counter_tb:1
+					<test enabled="1">COUNTER:counter_tb:1
 						<tool>ADE</tool>
 						<tooloptions>
 							<option>cell
@@ -694,7 +289,44 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>COUNTER:counter_tb:1_none_Interactive.8</value>
+								<value>COUNTER:counter_tb:1_none_Interactive.20</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>counter_tb</value>
+							</option>
+							<option>lib
+								<value>COUNTER</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+					<test>COUNTER:counter_tb:2
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>counter_tb</value>
+							</option>
+							<option>lib
+								<value>COUNTER</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>COUNTER:counter_tb:2_none_Interactive.20</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -737,27 +369,30 @@
 						<value></value>
 					</plottingoption>
 				</plottingoptions>
+				<disabledtests>
+					<test>COUNTER:counter_tb:1</test>
+				</disabledtests>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Nov 22 10:04:03 2021</timestamp>
-			<uuid>{656e7f78-aa47-449a-99a4-15dbd2693fa8}</uuid>
-			<resultsname>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.8.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.8.rdb</simresults>
+			<timestamp>Nov 22 23:42:33 2021</timestamp>
+			<uuid>{d6a4e40a-e1ba-40dc-8295-c05aec3c65fc}</uuid>
+			<resultsname>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.20.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.20.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_saul_100403599</localpsfdir>
-			<psfdir>/home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.8</psfdir>
-			<simdir>$AXL_PROJECT_DIR/COUNTER/counter_tb/adexl/results/data/Interactive.8</simdir>
+			<localpsfdir>/tmp/s2424_saul_234233932</localpsfdir>
+			<psfdir>/home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.20</psfdir>
+			<simdir>$AXL_PROJECT_DIR/COUNTER/counter_tb/adexl/results/data/Interactive.20</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.8.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.8.log</runlogfile>
+			<runlog>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.20.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.20.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.9
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.21
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -772,7 +407,7 @@
 				<currentmode>Single Run, Sweeps and Corners</currentmode>
 				<overwritehistory>0</overwritehistory>
 				<tests>
-					<test>COUNTER:counter_tb:1
+					<test enabled="1">COUNTER:counter_tb:1
 						<tool>ADE</tool>
 						<tooloptions>
 							<option>cell
@@ -791,7 +426,44 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>COUNTER:counter_tb:1_none_Interactive.9</value>
+								<value>COUNTER:counter_tb:1_none_Interactive.21</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>counter_tb</value>
+							</option>
+							<option>lib
+								<value>COUNTER</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+					<test>COUNTER:counter_tb:2
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>counter_tb</value>
+							</option>
+							<option>lib
+								<value>COUNTER</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>COUNTER:counter_tb:2_none_Interactive.21</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -834,27 +506,30 @@
 						<value></value>
 					</plottingoption>
 				</plottingoptions>
+				<disabledtests>
+					<test>COUNTER:counter_tb:1</test>
+				</disabledtests>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Nov 22 10:13:02 2021</timestamp>
-			<uuid>{03819a6f-6227-4137-9884-9f782364d702}</uuid>
-			<resultsname>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.9.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.9.rdb</simresults>
+			<timestamp>Nov 22 23:47:11 2021</timestamp>
+			<uuid>{087dde83-4bab-4c5a-a7cf-4c63e6936e34}</uuid>
+			<resultsname>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.21.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.21.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_saul_101302577</localpsfdir>
-			<psfdir>/home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.9</psfdir>
-			<simdir>$AXL_PROJECT_DIR/COUNTER/counter_tb/adexl/results/data/Interactive.9</simdir>
+			<localpsfdir>/tmp/s2424_saul_234711241</localpsfdir>
+			<psfdir>/home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.21</psfdir>
+			<simdir>$AXL_PROJECT_DIR/COUNTER/counter_tb/adexl/results/data/Interactive.21</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.9.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.9.log</runlogfile>
+			<runlog>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.21.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.21.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.10
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.22
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -869,7 +544,7 @@
 				<currentmode>Single Run, Sweeps and Corners</currentmode>
 				<overwritehistory>0</overwritehistory>
 				<tests>
-					<test>COUNTER:counter_tb:1
+					<test enabled="1">COUNTER:counter_tb:1
 						<tool>ADE</tool>
 						<tooloptions>
 							<option>cell
@@ -888,7 +563,44 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>COUNTER:counter_tb:1_none_Interactive.10</value>
+								<value>COUNTER:counter_tb:1_none_Interactive.22</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>counter_tb</value>
+							</option>
+							<option>lib
+								<value>COUNTER</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+					<test>COUNTER:counter_tb:2
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>counter_tb</value>
+							</option>
+							<option>lib
+								<value>COUNTER</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>COUNTER:counter_tb:2_none_Interactive.22</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -931,27 +643,30 @@
 						<value></value>
 					</plottingoption>
 				</plottingoptions>
+				<disabledtests>
+					<test>COUNTER:counter_tb:1</test>
+				</disabledtests>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Nov 22 10:49:35 2021</timestamp>
-			<uuid>{b9037926-0539-494a-9adf-2ad64a56a27c}</uuid>
-			<resultsname>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.10.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.10.rdb</simresults>
+			<timestamp>Nov 22 23:56:19 2021</timestamp>
+			<uuid>{98661d63-8d42-4d0c-9dbd-97c3b852226d}</uuid>
+			<resultsname>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.22.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.22.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_saul_104935268</localpsfdir>
-			<psfdir>/home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.10</psfdir>
-			<simdir>$AXL_PROJECT_DIR/COUNTER/counter_tb/adexl/results/data/Interactive.10</simdir>
+			<localpsfdir>/tmp/s2424_saul_235619301</localpsfdir>
+			<psfdir>/home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.22</psfdir>
+			<simdir>$AXL_PROJECT_DIR/COUNTER/counter_tb/adexl/results/data/Interactive.22</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.10.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.10.log</runlogfile>
+			<runlog>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.22.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.22.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>
-		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.11
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.23
 			<checkpoint>
 				<corners>
 					<corner enabled="1">_default</corner>
@@ -966,7 +681,7 @@
 				<currentmode>Single Run, Sweeps and Corners</currentmode>
 				<overwritehistory>0</overwritehistory>
 				<tests>
-					<test>COUNTER:counter_tb:1
+					<test enabled="1">COUNTER:counter_tb:1
 						<tool>ADE</tool>
 						<tooloptions>
 							<option>cell
@@ -985,7 +700,44 @@
 								<value>$AXL_SETUPDB_DIR/test_states</value>
 							</option>
 							<option>state
-								<value>COUNTER:counter_tb:1_none_Interactive.11</value>
+								<value>COUNTER:counter_tb:1_none_Interactive.23</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>counter_tb</value>
+							</option>
+							<option>lib
+								<value>COUNTER</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+					<test>COUNTER:counter_tb:2
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>counter_tb</value>
+							</option>
+							<option>lib
+								<value>COUNTER</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>COUNTER:counter_tb:2_none_Interactive.23</value>
 							</option>
 						</tooloptions>
 						<origoptions>
@@ -1028,23 +780,711 @@
 						<value></value>
 					</plottingoption>
 				</plottingoptions>
+				<disabledtests>
+					<test>COUNTER:counter_tb:1</test>
+				</disabledtests>
 				<sortVariableValues>0</sortVariableValues>
 			</checkpoint>
-			<timestamp>Nov 22 10:55:53 2021</timestamp>
-			<uuid>{5d37baa1-c393-43c1-9421-04a40a8a40cb}</uuid>
-			<resultsname>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.11.rdb</resultsname>
-			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.11.rdb</simresults>
+			<timestamp>Nov 22 23:57:57 2021</timestamp>
+			<uuid>{7ab11f4a-812e-4468-b33b-c543cc0389f6}</uuid>
+			<resultsname>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.23.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.23.rdb</simresults>
 			<rawdatadelstrategy>SaveAll
 				<simdatasavemode>All</simdatasavemode>
 			</rawdatadelstrategy>
 			<netlistdelstrategy>SaveAll</netlistdelstrategy>
 			<uselocalpsfdir>false</uselocalpsfdir>
-			<localpsfdir>/tmp/s2424_saul_105553684</localpsfdir>
-			<psfdir>/home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.11</psfdir>
-			<simdir>$AXL_PROJECT_DIR/COUNTER/counter_tb/adexl/results/data/Interactive.11</simdir>
+			<localpsfdir>/tmp/s2424_saul_235757567</localpsfdir>
+			<psfdir>/home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.23</psfdir>
+			<simdir>$AXL_PROJECT_DIR/COUNTER/counter_tb/adexl/results/data/Interactive.23</simdir>
 			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
-			<runlog>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.11.log</runlog>
-			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.11.log</runlogfile>
+			<runlog>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.23.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.23.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.24
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">COUNTER:counter_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>counter_tb</value>
+							</option>
+							<option>lib
+								<value>COUNTER</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>COUNTER:counter_tb:1_none_Interactive.24</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>counter_tb</value>
+							</option>
+							<option>lib
+								<value>COUNTER</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+					<test>COUNTER:counter_tb:2
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>counter_tb</value>
+							</option>
+							<option>lib
+								<value>COUNTER</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>COUNTER:counter_tb:2_none_Interactive.24</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>counter_tb</value>
+							</option>
+							<option>lib
+								<value>COUNTER</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>New Win</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>COUNTER:counter_tb:1</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Nov 22 23:59:54 2021</timestamp>
+			<uuid>{17dfb487-ba4b-4f3e-95c9-024946fc0638}</uuid>
+			<resultsname>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.24.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.24.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_saul_235954536</localpsfdir>
+			<psfdir>/home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.24</psfdir>
+			<simdir>$AXL_PROJECT_DIR/COUNTER/counter_tb/adexl/results/data/Interactive.24</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.24.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.24.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.25
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">COUNTER:counter_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>counter_tb</value>
+							</option>
+							<option>lib
+								<value>COUNTER</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>COUNTER:counter_tb:1_none_Interactive.25</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>counter_tb</value>
+							</option>
+							<option>lib
+								<value>COUNTER</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+					<test>COUNTER:counter_tb:2
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>counter_tb</value>
+							</option>
+							<option>lib
+								<value>COUNTER</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>COUNTER:counter_tb:2_none_Interactive.25</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>counter_tb</value>
+							</option>
+							<option>lib
+								<value>COUNTER</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>New Win</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>COUNTER:counter_tb:1</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Nov 23 00:10:55 2021</timestamp>
+			<uuid>{2e8aa7e8-1f74-42a8-8e00-3df4162e0d73}</uuid>
+			<resultsname>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.25.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.25.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_saul_001055706</localpsfdir>
+			<psfdir>/home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.25</psfdir>
+			<simdir>$AXL_PROJECT_DIR/COUNTER/counter_tb/adexl/results/data/Interactive.25</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.25.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.25.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.26
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">COUNTER:counter_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>counter_tb</value>
+							</option>
+							<option>lib
+								<value>COUNTER</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>COUNTER:counter_tb:1_none_Interactive.26</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>counter_tb</value>
+							</option>
+							<option>lib
+								<value>COUNTER</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+					<test>COUNTER:counter_tb:2
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>counter_tb</value>
+							</option>
+							<option>lib
+								<value>COUNTER</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>COUNTER:counter_tb:2_none_Interactive.26</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>counter_tb</value>
+							</option>
+							<option>lib
+								<value>COUNTER</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>New Win</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>COUNTER:counter_tb:1</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Nov 23 00:14:59 2021</timestamp>
+			<uuid>{dd6876fc-9bd6-4d08-a78d-6bebd64dd1a6}</uuid>
+			<resultsname>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.26.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.26.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_saul_001459794</localpsfdir>
+			<psfdir>/home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.26</psfdir>
+			<simdir>$AXL_PROJECT_DIR/COUNTER/counter_tb/adexl/results/data/Interactive.26</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.26.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.26.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.27
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">COUNTER:counter_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>counter_tb</value>
+							</option>
+							<option>lib
+								<value>COUNTER</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>COUNTER:counter_tb:1_none_Interactive.27</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>counter_tb</value>
+							</option>
+							<option>lib
+								<value>COUNTER</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+					<test>COUNTER:counter_tb:2
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>counter_tb</value>
+							</option>
+							<option>lib
+								<value>COUNTER</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>COUNTER:counter_tb:2_none_Interactive.27</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>counter_tb</value>
+							</option>
+							<option>lib
+								<value>COUNTER</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>New Win</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>COUNTER:counter_tb:1</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Nov 23 14:03:00 2021</timestamp>
+			<uuid>{cad764c4-d42d-41c5-ba72-b6e366a42b7f}</uuid>
+			<resultsname>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.27.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.27.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_saul_140300690</localpsfdir>
+			<psfdir>/home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.27</psfdir>
+			<simdir>$AXL_PROJECT_DIR/COUNTER/counter_tb/adexl/results/data/Interactive.27</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.27.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.27.log</runlogfile>
+			<schematicpoint></schematicpoint>
+			<test>all</test>
+		</historyentry>
+		<historyentry assemblerOrExplorer="adexl" roOrView="view">Interactive.28
+			<checkpoint>
+				<corners>
+					<corner enabled="1">_default</corner>
+				</corners>
+				<extensions>
+					<extension>Parasitics
+						<callback>_parSetupDBExtensionCB</callback>
+						<iconvalue></iconvalue>
+						<icontype></icontype>
+					</extension>
+				</extensions>
+				<currentmode>Single Run, Sweeps and Corners</currentmode>
+				<overwritehistory>0</overwritehistory>
+				<tests>
+					<test enabled="1">COUNTER:counter_tb:1
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>counter_tb</value>
+							</option>
+							<option>lib
+								<value>COUNTER</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>COUNTER:counter_tb:1_none_Interactive.28</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>counter_tb</value>
+							</option>
+							<option>lib
+								<value>COUNTER</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+					<test>COUNTER:counter_tb:2
+						<tool>ADE</tool>
+						<tooloptions>
+							<option>cell
+								<value>counter_tb</value>
+							</option>
+							<option>lib
+								<value>COUNTER</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+							<option>path
+								<value>$AXL_SETUPDB_DIR/test_states</value>
+							</option>
+							<option>state
+								<value>COUNTER:counter_tb:2_none_Interactive.28</value>
+							</option>
+						</tooloptions>
+						<origoptions>
+							<option>cell
+								<value>counter_tb</value>
+							</option>
+							<option>lib
+								<value>COUNTER</value>
+							</option>
+							<option>sim
+								<value>ams</value>
+							</option>
+							<option>view
+								<value>config</value>
+							</option>
+						</origoptions>
+					</test>
+				</tests>
+				<overwritehistoryname>Interactive.0</overwritehistoryname>
+				<plottingoptions>
+					<plottingoption>plottingmode
+						<value>New Win</value>
+					</plottingoption>
+					<plottingoption>plottype
+						<value>None</value>
+					</plottingoption>
+					<plottingoption>usewaveformtemplate
+						<value>no</value>
+					</plottingoption>
+					<plottingoption>useMaestroPlottingTemplate
+						<value>yes</value>
+					</plottingoption>
+					<plottingoption>waveformtemplate
+						<value></value>
+					</plottingoption>
+					<plottingoption>allplottingtemplates
+						<value></value>
+					</plottingoption>
+					<plottingoption>defaultplottingtemplate
+						<value></value>
+					</plottingoption>
+				</plottingoptions>
+				<disabledtests>
+					<test>COUNTER:counter_tb:1</test>
+				</disabledtests>
+				<sortVariableValues>0</sortVariableValues>
+			</checkpoint>
+			<timestamp>Nov 23 14:05:24 2021</timestamp>
+			<uuid>{9cac610e-3109-4432-a39f-85454a58299e}</uuid>
+			<resultsname>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.28.rdb</resultsname>
+			<simresults>$AXL_SETUPDB_DIR/results/data/Interactive.28.rdb</simresults>
+			<rawdatadelstrategy>SaveAll
+				<simdatasavemode>All</simdatasavemode>
+			</rawdatadelstrategy>
+			<netlistdelstrategy>SaveAll</netlistdelstrategy>
+			<uselocalpsfdir>false</uselocalpsfdir>
+			<localpsfdir>/tmp/s2424_saul_140524786</localpsfdir>
+			<psfdir>/home/saul/simulation/COUNTER/counter_tb/adexl/results/data/Interactive.28</psfdir>
+			<simdir>$AXL_PROJECT_DIR/COUNTER/counter_tb/adexl/results/data/Interactive.28</simdir>
+			<gendatasheetplotsonsimulation>1</gendatasheetplotsonsimulation>
+			<runlog>/home/saul/projects/KISTA_DIGITAL/virtuoso/COUNTER/counter_tb/adexl/results/data/Interactive.28.log</runlog>
+			<runlogfile>$AXL_SETUPDB_DIR/results/data/Interactive.28.log</runlogfile>
 			<schematicpoint></schematicpoint>
 			<test>all</test>
 		</historyentry>

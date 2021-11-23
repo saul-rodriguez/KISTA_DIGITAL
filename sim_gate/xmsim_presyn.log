@@ -3,5 +3,5 @@ xcelium> run
 Simulation complete via $finish(1) at time 564 NS + 0
 ../src/counter_tb.v:19 	#500 $finish;
 xcelium> exit
-xmsim: Memory Usage - Final: 26.0M, Peak: 26.4M, Peak virtual: 199.0M
-xmsim: CPU Usage - 0.0s system + 0.0s user = 0.1s total (0.1s, 83.4% cpu)
+xmsim: Memory Usage - Final: 26.3M, Peak: 26.6M, Peak virtual: 199.2M
+xmsim: CPU Usage - 0.0s system + 0.0s user = 0.1s total (0.1s, 82.2% cpu)

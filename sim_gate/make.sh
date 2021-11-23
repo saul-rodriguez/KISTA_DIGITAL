@@ -3,7 +3,8 @@ rm -rf work*/* work*/.* *.log .simvision *.dsn *.trn *.vcd wave* *.X
 
 xmvlog -work work_lib -cdslib ./cds.lib -logfile xmvlog_presyn.log \
 	-errormax 15 -update -linedebug -status -define DISPLAY_PD_PU_EN \
-	../src/KISTA_SOI_STDLIB.v 
+	../src/KISTA_SOI_STDLIB_ECSM_TT_del.v
+
 
 xmvlog -work work_sub -cdslib ./cds.lib -append_log \
 	-logfile xmvlog_presyn.log -errormax 15 -update -linedebug \

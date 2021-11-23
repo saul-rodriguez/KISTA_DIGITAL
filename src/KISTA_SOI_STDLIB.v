@@ -1,1 +1,1 @@
-../virtuoso/models/verilog/KISTA_SOI_STDLIB.v
+/home/saul/projects/KISTA/models/verilog/KISTA_SOI_STDLIB.v

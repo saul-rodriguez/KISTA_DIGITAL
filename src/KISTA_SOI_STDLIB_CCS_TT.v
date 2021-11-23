@@ -1,0 +1,1 @@
+/home/saul/projects/KISTA/models/verilog/KISTA_SOI_STDLIB_CCS_TT.v
