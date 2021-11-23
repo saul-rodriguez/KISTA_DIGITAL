@@ -76,6 +76,11 @@ syn_generic
 syn_map
 syn_opt
 
+#Insert tiehi or tielo cells to inputs connected to 1 or 0
+insert_tiehilo_cells -high TIEHI -low TIELO counter
+#or simply	
+#insert_tiehilo_cells
+
 #--------------------
 # Output and Reports 
 #--------------------

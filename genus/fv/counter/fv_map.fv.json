@@ -228,14 +228,14 @@
 "type":"instance"},
 
 {"index": "1", 
- "date": "Thu Nov 18 14:29:02 CET 2021",
- "seconds": 1637242142.151921,
+ "date": "Tue Nov 23 14:20:21 CET 2021",
+ "seconds": 1637673621.06391,
  "netlist": "fv/counter/fv_map.v.gz", 
  "design_name": "counter", 
  "synth_workdir": "/home/saul/projects/KISTA_DIGITAL/genus", 
  "synthesis_command":"",
  "current_label": "fv_map", 
  "previous_label": "rtl", 
- "write_verif_file_runtime": 0.477253 
+ "write_verif_file_runtime": 0.418724 
  }
 ]
